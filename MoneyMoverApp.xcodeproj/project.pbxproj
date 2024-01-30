@@ -55,6 +55,7 @@
 		C8E904B72B693FFE000117FF /* MoneyMoverApp */ = {
 			isa = PBXGroup;
 			children = (
+				C8E904C92B69448F000117FF /* Create Account */,
 				C8E904C62B694015000117FF /* Home */,
 				C8E904B82B693FFE000117FF /* MoneyMoverAppApp.swift */,
 				C8E904BA2B693FFE000117FF /* ContentView.swift */,
@@ -75,7 +76,6 @@
 		C8E904C62B694015000117FF /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				C8E904C92B69448F000117FF /* Create Account */,
 				C8E904C72B694024000117FF /* HomeHeaderView.swift */,
 			);
 			path = Home;
