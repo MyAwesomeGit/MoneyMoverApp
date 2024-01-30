@@ -27,6 +27,19 @@ struct CardView: View {
                         Image("visa-logo")
                     }
                     .padding(.horizontal, 20)
+                    HStack {
+                        HStack {
+                            Text("****")
+                            Text("****")
+                            Text("****")
+                            Text("0708")
+                        }
+                        .font(.system(size: 8))
+                        Spacer()
+                    }
+                    .padding(.top, 15)
+                    .padding(.horizontal, 20)
+                    Spacer()
                 }
                 .frame(width: 280, height: 160)
                 .padding(10)
