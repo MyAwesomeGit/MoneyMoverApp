@@ -17,6 +17,7 @@
 		C8E904CF2B6A2460000117FF /* AccountSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904CE2B6A2460000117FF /* AccountSummaryView.swift */; };
 		C8E904D62B6A9185000117FF /* TransactionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904D52B6A9185000117FF /* TransactionItemView.swift */; };
 		C8E904D82B6A92DA000117FF /* AccountHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904D72B6A92DA000117FF /* AccountHomeView.swift */; };
+		C8E904DA2B6A9745000117FF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C8E904D92B6A9745000117FF /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		C8E904CE2B6A2460000117FF /* AccountSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryView.swift; sourceTree = "<group>"; };
 		C8E904D52B6A9185000117FF /* TransactionItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionItemView.swift; sourceTree = "<group>"; };
 		C8E904D72B6A92DA000117FF /* AccountHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountHomeView.swift; sourceTree = "<group>"; };
+		C8E904D92B6A9745000117FF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 		C8E904AC2B693FFE000117FF = {
 			isa = PBXGroup;
 			children = (
+				C8E904D92B6A9745000117FF /* README.md */,
 				C8E904B72B693FFE000117FF /* MoneyMoverApp */,
 				C8E904B62B693FFE000117FF /* Products */,
 			);
@@ -167,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E904DA2B6A9745000117FF /* README.md in Resources */,
 				C8E904C02B694000000117FF /* Preview Assets.xcassets in Resources */,
 				C8E904BD2B694000000117FF /* Assets.xcassets in Resources */,
 			);
