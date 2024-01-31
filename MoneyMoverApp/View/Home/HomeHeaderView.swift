@@ -5,10 +5,10 @@ struct HomeHeaderView: View {
     var body: some View {
         HStack(alignment: .center) {
             VStack(alignment: .leading, spacing: -8) {
-                Text("Hi")
+                Text("Jack")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                Text("Welcome")
+                Text("The Financier")
                     .font(.title)
             }
             .foregroundColor(Color(red: -0.004, green: 0.239, blue: 0.43))

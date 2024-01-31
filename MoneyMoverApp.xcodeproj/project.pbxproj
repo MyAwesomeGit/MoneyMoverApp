@@ -13,6 +13,8 @@
 		C8E904C02B694000000117FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8E904BF2B694000000117FF /* Preview Assets.xcassets */; };
 		C8E904C82B694024000117FF /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904C72B694024000117FF /* HomeHeaderView.swift */; };
 		C8E904CB2B69449F000117FF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904CA2B69449F000117FF /* CardView.swift */; };
+		C8E904CD2B6A0F9F000117FF /* HomeSubmenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904CC2B6A0F9F000117FF /* HomeSubmenuView.swift */; };
+		C8E904CF2B6A2460000117FF /* AccountSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904CE2B6A2460000117FF /* AccountSummaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		C8E904BF2B694000000117FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C8E904C72B694024000117FF /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		C8E904CA2B69449F000117FF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C8E904CC2B6A0F9F000117FF /* HomeSubmenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSubmenuView.swift; sourceTree = "<group>"; };
+		C8E904CE2B6A2460000117FF /* AccountSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,7 @@
 		C8E904B72B693FFE000117FF /* MoneyMoverApp */ = {
 			isa = PBXGroup;
 			children = (
-				C8E904C92B69448F000117FF /* Create Account */,
-				C8E904C62B694015000117FF /* Home */,
+				C8E904D02B6A6114000117FF /* View */,
 				C8E904B82B693FFE000117FF /* MoneyMoverAppApp.swift */,
 				C8E904BA2B693FFE000117FF /* ContentView.swift */,
 				C8E904BC2B694000000117FF /* Assets.xcassets */,
@@ -77,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				C8E904C72B694024000117FF /* HomeHeaderView.swift */,
+				C8E904CC2B6A0F9F000117FF /* HomeSubmenuView.swift */,
+				C8E904CE2B6A2460000117FF /* AccountSummaryView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -87,6 +92,15 @@
 				C8E904CA2B69449F000117FF /* CardView.swift */,
 			);
 			path = "Create Account";
+			sourceTree = "<group>";
+		};
+		C8E904D02B6A6114000117FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8E904C92B69448F000117FF /* Create Account */,
+				C8E904C62B694015000117FF /* Home */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8E904C82B694024000117FF /* HomeHeaderView.swift in Sources */,
+				C8E904CF2B6A2460000117FF /* AccountSummaryView.swift in Sources */,
+				C8E904CD2B6A0F9F000117FF /* HomeSubmenuView.swift in Sources */,
 				C8E904BB2B693FFE000117FF /* ContentView.swift in Sources */,
 				C8E904CB2B69449F000117FF /* CardView.swift in Sources */,
 				C8E904B92B693FFE000117FF /* MoneyMoverAppApp.swift in Sources */,

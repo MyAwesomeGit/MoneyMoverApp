@@ -11,12 +11,12 @@ struct CardView: View {
                 Image("right-card")
                     .renderingMode(.template)
                     .foregroundColor(.black)
-                    .opacity(0.94)
+                    .opacity(0.7)
             }
             
             VStack {
                 HStack {
-                    Image("checkmark")
+                    Image("greencheckmark")
                     VStack(alignment: .leading, spacing:  -6) {
                         Text("1 000 000 ₽")
                             .font(.title2)
@@ -30,9 +30,9 @@ struct CardView: View {
                 .padding(.horizontal, 20)
                 HStack {
                     HStack {
-                        Text("****")
-                        Text("****")
-                        Text("****")
+                        Text("0000")
+                        Text("1000")
+                        Text("1234")
                         Text("0708")
                     }
                     .font(.system(size: 12))
@@ -45,7 +45,7 @@ struct CardView: View {
                 HStack {
                     VStack(alignment: .leading) {
                         Text("CARD HOLDER")
-                        Text("Cardholder Name")
+                        Text("Jack")
                     }
                     .foregroundColor(Color.white)
                     .font(.system(size: 12))
