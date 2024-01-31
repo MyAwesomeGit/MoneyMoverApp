@@ -16,6 +16,7 @@
 		C8E904CD2B6A0F9F000117FF /* HomeSubmenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904CC2B6A0F9F000117FF /* HomeSubmenuView.swift */; };
 		C8E904CF2B6A2460000117FF /* AccountSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904CE2B6A2460000117FF /* AccountSummaryView.swift */; };
 		C8E904D62B6A9185000117FF /* TransactionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904D52B6A9185000117FF /* TransactionItemView.swift */; };
+		C8E904D82B6A92DA000117FF /* AccountHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904D72B6A92DA000117FF /* AccountHomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		C8E904CC2B6A0F9F000117FF /* HomeSubmenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSubmenuView.swift; sourceTree = "<group>"; };
 		C8E904CE2B6A2460000117FF /* AccountSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryView.swift; sourceTree = "<group>"; };
 		C8E904D52B6A9185000117FF /* TransactionItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionItemView.swift; sourceTree = "<group>"; };
+		C8E904D72B6A92DA000117FF /* AccountHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountHomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				C8E904CC2B6A0F9F000117FF /* HomeSubmenuView.swift */,
 				C8E904CE2B6A2460000117FF /* AccountSummaryView.swift */,
 				C8E904D52B6A9185000117FF /* TransactionItemView.swift */,
+				C8E904D72B6A92DA000117FF /* AccountHomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8E904C82B694024000117FF /* HomeHeaderView.swift in Sources */,
+				C8E904D82B6A92DA000117FF /* AccountHomeView.swift in Sources */,
 				C8E904CF2B6A2460000117FF /* AccountSummaryView.swift in Sources */,
 				C8E904D62B6A9185000117FF /* TransactionItemView.swift in Sources */,
 				C8E904CD2B6A0F9F000117FF /* HomeSubmenuView.swift in Sources */,
