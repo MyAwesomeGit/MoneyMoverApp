@@ -145,3 +145,4 @@ struct PaymentInfo: View {
         .frame(height: 200)
     }
 }
+
