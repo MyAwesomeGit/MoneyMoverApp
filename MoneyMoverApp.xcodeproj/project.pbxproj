@@ -16,6 +16,7 @@
 		C86F219F2B6BE70700DF4736 /* AccountFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F219E2B6BE70700DF4736 /* AccountFormView.swift */; };
 		C86F21A12B6BE74600DF4736 /* FirstNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21A02B6BE74600DF4736 /* FirstNameView.swift */; };
 		C86F21A32B6BE76700DF4736 /* LastNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21A22B6BE76700DF4736 /* LastNameView.swift */; };
+		C86F21A52B6BE79900DF4736 /* CardLimitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21A42B6BE79900DF4736 /* CardLimitView.swift */; };
 		C8E904B92B693FFE000117FF /* MoneyMoverAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904B82B693FFE000117FF /* MoneyMoverAppApp.swift */; };
 		C8E904BB2B693FFE000117FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904BA2B693FFE000117FF /* ContentView.swift */; };
 		C8E904BD2B694000000117FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8E904BC2B694000000117FF /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		C86F219E2B6BE70700DF4736 /* AccountFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountFormView.swift; sourceTree = "<group>"; };
 		C86F21A02B6BE74600DF4736 /* FirstNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstNameView.swift; sourceTree = "<group>"; };
 		C86F21A22B6BE76700DF4736 /* LastNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastNameView.swift; sourceTree = "<group>"; };
+		C86F21A42B6BE79900DF4736 /* CardLimitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardLimitView.swift; sourceTree = "<group>"; };
 		C8E904B52B693FFE000117FF /* MoneyMoverApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyMoverApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E904B82B693FFE000117FF /* MoneyMoverAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyMoverAppApp.swift; sourceTree = "<group>"; };
 		C8E904BA2B693FFE000117FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				C86F21A02B6BE74600DF4736 /* FirstNameView.swift */,
 				C86F21A22B6BE76700DF4736 /* LastNameView.swift */,
+				C86F21A42B6BE79900DF4736 /* CardLimitView.swift */,
 				C86F219E2B6BE70700DF4736 /* AccountFormView.swift */,
 			);
 			path = AccountFormView;
@@ -240,6 +243,7 @@
 				C8E904BB2B693FFE000117FF /* ContentView.swift in Sources */,
 				C8E904CB2B69449F000117FF /* CardView.swift in Sources */,
 				C86F21962B6BE60300DF4736 /* ColorButtonMenu.swift in Sources */,
+				C86F21A52B6BE79900DF4736 /* CardLimitView.swift in Sources */,
 				C86F21922B6BE58D00DF4736 /* AccountTypeView.swift in Sources */,
 				C86F21982B6BE63C00DF4736 /* CreditCardStyle.swift in Sources */,
 				C8E904B92B693FFE000117FF /* MoneyMoverAppApp.swift in Sources */,
