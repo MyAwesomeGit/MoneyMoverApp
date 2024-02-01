@@ -14,10 +14,15 @@ struct HomeHeaderView: View {
             .foregroundColor(Color(red: -0.004, green: 0.239, blue: 0.43))
             Spacer()
             Image("avatar")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 90, height: 120)
+                .clipShape(Circle())
         }
         .padding(.horizontal, 20)
     }
 }
+
 
 struct HomeHeaderView_Previews: PreviewProvider {
     static var previews: some View {

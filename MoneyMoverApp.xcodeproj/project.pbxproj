@@ -66,6 +66,7 @@
 		C8E904B72B693FFE000117FF /* MoneyMoverApp */ = {
 			isa = PBXGroup;
 			children = (
+				C8E904E12B6BB0D2000117FF /* Modifiers */,
 				C8E904D02B6A6114000117FF /* View */,
 				C8E904B82B693FFE000117FF /* MoneyMoverAppApp.swift */,
 				C8E904BA2B693FFE000117FF /* ContentView.swift */,
@@ -110,6 +111,13 @@
 				C8E904C62B694015000117FF /* Home */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C8E904E12B6BB0D2000117FF /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
