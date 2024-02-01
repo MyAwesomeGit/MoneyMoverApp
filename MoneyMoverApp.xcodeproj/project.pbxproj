@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C86F21922B6BE58D00DF4736 /* AccountTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21912B6BE58D00DF4736 /* AccountTypeView.swift */; };
 		C8E904B92B693FFE000117FF /* MoneyMoverAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904B82B693FFE000117FF /* MoneyMoverAppApp.swift */; };
 		C8E904BB2B693FFE000117FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904BA2B693FFE000117FF /* ContentView.swift */; };
 		C8E904BD2B694000000117FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8E904BC2B694000000117FF /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C86F21912B6BE58D00DF4736 /* AccountTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTypeView.swift; sourceTree = "<group>"; };
 		C8E904B52B693FFE000117FF /* MoneyMoverApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyMoverApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E904B82B693FFE000117FF /* MoneyMoverAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyMoverAppApp.swift; sourceTree = "<group>"; };
 		C8E904BA2B693FFE000117FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		C8E904C62B694015000117FF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C86F21912B6BE58D00DF4736 /* AccountTypeView.swift */,
 				C8E904C72B694024000117FF /* HomeHeaderView.swift */,
 				C8E904CC2B6A0F9F000117FF /* HomeSubmenuView.swift */,
 				C8E904CE2B6A2460000117FF /* AccountSummaryView.swift */,
@@ -198,6 +201,7 @@
 				C8E904CD2B6A0F9F000117FF /* HomeSubmenuView.swift in Sources */,
 				C8E904BB2B693FFE000117FF /* ContentView.swift in Sources */,
 				C8E904CB2B69449F000117FF /* CardView.swift in Sources */,
+				C86F21922B6BE58D00DF4736 /* AccountTypeView.swift in Sources */,
 				C8E904B92B693FFE000117FF /* MoneyMoverAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
