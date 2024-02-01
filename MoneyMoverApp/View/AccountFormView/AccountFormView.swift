@@ -13,7 +13,9 @@ struct AccountFormView: View {
     var body: some View {
         List {
             Section {
-
+                FirstNameView()
+                LastNameView()
+                CardLimitView()
             }
             .listRowBackground(Color.white)
             .listRowInsets(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
