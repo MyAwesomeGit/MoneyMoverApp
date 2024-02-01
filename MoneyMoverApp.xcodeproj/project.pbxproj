@@ -82,28 +82,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C86F219D2B6BE6F000DF4736 /* AccountFormView */ = {
+		C86F219D2B6BE6F000DF4736 /* Account Form View */ = {
 			isa = PBXGroup;
 			children = (
 				C86F21A02B6BE74600DF4736 /* FirstNameView.swift */,
 				C86F21A22B6BE76700DF4736 /* LastNameView.swift */,
 				C86F21A42B6BE79900DF4736 /* CardLimitView.swift */,
-				C86F219E2B6BE70700DF4736 /* AccountFormView.swift */,
 			);
-			path = AccountFormView;
+			path = "Account Form View";
 			sourceTree = "<group>";
 		};
-		C86F21A62B6BE87A00DF4736 /* AccountSummaryView */ = {
+		C86F21A62B6BE87A00DF4736 /* Account Summary View */ = {
 			isa = PBXGroup;
 			children = (
-				C86F21B12B6BE97B00DF4736 /* CreditCardView */,
-				C86F21B22B6BE98F00DF4736 /* DebitCardView */,
 				C8E904CE2B6A2460000117FF /* AccountSummaryView.swift */,
+				C86F21B12B6BE97B00DF4736 /* Credit Card View */,
+				C86F21B22B6BE98F00DF4736 /* Debit Card View */,
 			);
-			path = AccountSummaryView;
+			path = "Account Summary View";
 			sourceTree = "<group>";
 		};
-		C86F21B12B6BE97B00DF4736 /* CreditCardView */ = {
+		C86F21B12B6BE97B00DF4736 /* Credit Card View */ = {
 			isa = PBXGroup;
 			children = (
 				C86F21A72B6BE8A600DF4736 /* CreditCardView.swift */,
@@ -112,17 +111,17 @@
 				C86F21AD2B6BE93300DF4736 /* AvailableCreditLimitChartView.swift */,
 				C86F21AF2B6BE95100DF4736 /* PaymentInfoView.swift */,
 			);
-			path = CreditCardView;
+			path = "Credit Card View";
 			sourceTree = "<group>";
 		};
-		C86F21B22B6BE98F00DF4736 /* DebitCardView */ = {
+		C86F21B22B6BE98F00DF4736 /* Debit Card View */ = {
 			isa = PBXGroup;
 			children = (
 				C86F21B32B6BE99700DF4736 /* DebitCardView.swift */,
 				C86F21B52B6BE9BD00DF4736 /* TransactionsView.swift */,
 				C86F21B72B6BE9DB00DF4736 /* TransactionDetailsView.swift */,
 			);
-			path = DebitCardView;
+			path = "Debit Card View";
 			sourceTree = "<group>";
 		};
 		C8E904AC2B693FFE000117FF = {
@@ -167,10 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				C86F21912B6BE58D00DF4736 /* AccountTypeView.swift */,
-				C86F21932B6BE5CA00DF4736 /* ColorView.swift */,
-				C86F21952B6BE60300DF4736 /* ColorButtonMenu.swift */,
-				C86F21972B6BE63C00DF4736 /* CreditCardStyle.swift */,
-				C86F21992B6BE66200DF4736 /* CreditCardTypeMenuView.swift */,
 				C86F219B2B6BE6CA00DF4736 /* FormTextField.swift */,
 				C8E904C72B694024000117FF /* HomeHeaderView.swift */,
 				C8E904CC2B6A0F9F000117FF /* HomeSubmenuView.swift */,
@@ -180,20 +175,24 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		C8E904C92B69448F000117FF /* Create Account */ = {
+		C8E904C92B69448F000117FF /* Create Account View */ = {
 			isa = PBXGroup;
 			children = (
+				C86F219D2B6BE6F000DF4736 /* Account Form View */,
+				C86F219E2B6BE70700DF4736 /* AccountFormView.swift */,
 				C8E904CA2B69449F000117FF /* CardView.swift */,
+				C86F21952B6BE60300DF4736 /* ColorButtonMenu.swift */,
+				C86F21932B6BE5CA00DF4736 /* ColorView.swift */,
+				C86F21992B6BE66200DF4736 /* CreditCardTypeMenuView.swift */,
 			);
-			path = "Create Account";
+			path = "Create Account View";
 			sourceTree = "<group>";
 		};
 		C8E904D02B6A6114000117FF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C86F21A62B6BE87A00DF4736 /* AccountSummaryView */,
-				C86F219D2B6BE6F000DF4736 /* AccountFormView */,
-				C8E904C92B69448F000117FF /* Create Account */,
+				C86F21A62B6BE87A00DF4736 /* Account Summary View */,
+				C8E904C92B69448F000117FF /* Create Account View */,
 				C8E904C62B694015000117FF /* Home */,
 			);
 			path = View;
@@ -202,6 +201,7 @@
 		C8E904E12B6BB0D2000117FF /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				C86F21972B6BE63C00DF4736 /* CreditCardStyle.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
