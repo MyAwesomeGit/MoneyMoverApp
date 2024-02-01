@@ -17,6 +17,14 @@
 		C86F21A12B6BE74600DF4736 /* FirstNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21A02B6BE74600DF4736 /* FirstNameView.swift */; };
 		C86F21A32B6BE76700DF4736 /* LastNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21A22B6BE76700DF4736 /* LastNameView.swift */; };
 		C86F21A52B6BE79900DF4736 /* CardLimitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21A42B6BE79900DF4736 /* CardLimitView.swift */; };
+		C86F21A82B6BE8A600DF4736 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21A72B6BE8A600DF4736 /* CreditCardView.swift */; };
+		C86F21AA2B6BE8D700DF4736 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21A92B6BE8D700DF4736 /* AccountView.swift */; };
+		C86F21AC2B6BE90500DF4736 /* AvailableCreditLimitInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21AB2B6BE90500DF4736 /* AvailableCreditLimitInfoView.swift */; };
+		C86F21AE2B6BE93300DF4736 /* AvailableCreditLimitChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21AD2B6BE93300DF4736 /* AvailableCreditLimitChartView.swift */; };
+		C86F21B02B6BE95100DF4736 /* PaymentInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21AF2B6BE95100DF4736 /* PaymentInfoView.swift */; };
+		C86F21B42B6BE99700DF4736 /* DebitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21B32B6BE99700DF4736 /* DebitCardView.swift */; };
+		C86F21B62B6BE9BD00DF4736 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21B52B6BE9BD00DF4736 /* TransactionsView.swift */; };
+		C86F21B82B6BE9DB00DF4736 /* TransactionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21B72B6BE9DB00DF4736 /* TransactionDetailsView.swift */; };
 		C8E904B92B693FFE000117FF /* MoneyMoverAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904B82B693FFE000117FF /* MoneyMoverAppApp.swift */; };
 		C8E904BB2B693FFE000117FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904BA2B693FFE000117FF /* ContentView.swift */; };
 		C8E904BD2B694000000117FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8E904BC2B694000000117FF /* Assets.xcassets */; };
@@ -41,6 +49,14 @@
 		C86F21A02B6BE74600DF4736 /* FirstNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstNameView.swift; sourceTree = "<group>"; };
 		C86F21A22B6BE76700DF4736 /* LastNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastNameView.swift; sourceTree = "<group>"; };
 		C86F21A42B6BE79900DF4736 /* CardLimitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardLimitView.swift; sourceTree = "<group>"; };
+		C86F21A72B6BE8A600DF4736 /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+		C86F21A92B6BE8D700DF4736 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		C86F21AB2B6BE90500DF4736 /* AvailableCreditLimitInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableCreditLimitInfoView.swift; sourceTree = "<group>"; };
+		C86F21AD2B6BE93300DF4736 /* AvailableCreditLimitChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableCreditLimitChartView.swift; sourceTree = "<group>"; };
+		C86F21AF2B6BE95100DF4736 /* PaymentInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInfoView.swift; sourceTree = "<group>"; };
+		C86F21B32B6BE99700DF4736 /* DebitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitCardView.swift; sourceTree = "<group>"; };
+		C86F21B52B6BE9BD00DF4736 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		C86F21B72B6BE9DB00DF4736 /* TransactionDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsView.swift; sourceTree = "<group>"; };
 		C8E904B52B693FFE000117FF /* MoneyMoverApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyMoverApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E904B82B693FFE000117FF /* MoneyMoverAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyMoverAppApp.swift; sourceTree = "<group>"; };
 		C8E904BA2B693FFE000117FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +91,38 @@
 				C86F219E2B6BE70700DF4736 /* AccountFormView.swift */,
 			);
 			path = AccountFormView;
+			sourceTree = "<group>";
+		};
+		C86F21A62B6BE87A00DF4736 /* AccountSummaryView */ = {
+			isa = PBXGroup;
+			children = (
+				C86F21B12B6BE97B00DF4736 /* CreditCardView */,
+				C86F21B22B6BE98F00DF4736 /* DebitCardView */,
+				C8E904CE2B6A2460000117FF /* AccountSummaryView.swift */,
+			);
+			path = AccountSummaryView;
+			sourceTree = "<group>";
+		};
+		C86F21B12B6BE97B00DF4736 /* CreditCardView */ = {
+			isa = PBXGroup;
+			children = (
+				C86F21A72B6BE8A600DF4736 /* CreditCardView.swift */,
+				C86F21A92B6BE8D700DF4736 /* AccountView.swift */,
+				C86F21AB2B6BE90500DF4736 /* AvailableCreditLimitInfoView.swift */,
+				C86F21AD2B6BE93300DF4736 /* AvailableCreditLimitChartView.swift */,
+				C86F21AF2B6BE95100DF4736 /* PaymentInfoView.swift */,
+			);
+			path = CreditCardView;
+			sourceTree = "<group>";
+		};
+		C86F21B22B6BE98F00DF4736 /* DebitCardView */ = {
+			isa = PBXGroup;
+			children = (
+				C86F21B32B6BE99700DF4736 /* DebitCardView.swift */,
+				C86F21B52B6BE9BD00DF4736 /* TransactionsView.swift */,
+				C86F21B72B6BE9DB00DF4736 /* TransactionDetailsView.swift */,
+			);
+			path = DebitCardView;
 			sourceTree = "<group>";
 		};
 		C8E904AC2B693FFE000117FF = {
@@ -126,7 +174,6 @@
 				C86F219B2B6BE6CA00DF4736 /* FormTextField.swift */,
 				C8E904C72B694024000117FF /* HomeHeaderView.swift */,
 				C8E904CC2B6A0F9F000117FF /* HomeSubmenuView.swift */,
-				C8E904CE2B6A2460000117FF /* AccountSummaryView.swift */,
 				C8E904D52B6A9185000117FF /* TransactionItemView.swift */,
 				C8E904D72B6A92DA000117FF /* AccountHomeView.swift */,
 			);
@@ -144,6 +191,7 @@
 		C8E904D02B6A6114000117FF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C86F21A62B6BE87A00DF4736 /* AccountSummaryView */,
 				C86F219D2B6BE6F000DF4736 /* AccountFormView */,
 				C8E904C92B69448F000117FF /* Create Account */,
 				C8E904C62B694015000117FF /* Home */,
@@ -229,23 +277,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C86F21B62B6BE9BD00DF4736 /* TransactionsView.swift in Sources */,
 				C8E904C82B694024000117FF /* HomeHeaderView.swift in Sources */,
 				C8E904D82B6A92DA000117FF /* AccountHomeView.swift in Sources */,
 				C86F21A12B6BE74600DF4736 /* FirstNameView.swift in Sources */,
+				C86F21B82B6BE9DB00DF4736 /* TransactionDetailsView.swift in Sources */,
 				C8E904CF2B6A2460000117FF /* AccountSummaryView.swift in Sources */,
+				C86F21B02B6BE95100DF4736 /* PaymentInfoView.swift in Sources */,
+				C86F21AA2B6BE8D700DF4736 /* AccountView.swift in Sources */,
 				C86F219C2B6BE6CA00DF4736 /* FormTextField.swift in Sources */,
 				C86F219F2B6BE70700DF4736 /* AccountFormView.swift in Sources */,
 				C86F219A2B6BE66200DF4736 /* CreditCardTypeMenuView.swift in Sources */,
 				C8E904D62B6A9185000117FF /* TransactionItemView.swift in Sources */,
+				C86F21AC2B6BE90500DF4736 /* AvailableCreditLimitInfoView.swift in Sources */,
 				C86F21942B6BE5CA00DF4736 /* ColorView.swift in Sources */,
 				C86F21A32B6BE76700DF4736 /* LastNameView.swift in Sources */,
+				C86F21A82B6BE8A600DF4736 /* CreditCardView.swift in Sources */,
 				C8E904CD2B6A0F9F000117FF /* HomeSubmenuView.swift in Sources */,
 				C8E904BB2B693FFE000117FF /* ContentView.swift in Sources */,
 				C8E904CB2B69449F000117FF /* CardView.swift in Sources */,
 				C86F21962B6BE60300DF4736 /* ColorButtonMenu.swift in Sources */,
 				C86F21A52B6BE79900DF4736 /* CardLimitView.swift in Sources */,
+				C86F21B42B6BE99700DF4736 /* DebitCardView.swift in Sources */,
 				C86F21922B6BE58D00DF4736 /* AccountTypeView.swift in Sources */,
 				C86F21982B6BE63C00DF4736 /* CreditCardStyle.swift in Sources */,
+				C86F21AE2B6BE93300DF4736 /* AvailableCreditLimitChartView.swift in Sources */,
 				C8E904B92B693FFE000117FF /* MoneyMoverAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
