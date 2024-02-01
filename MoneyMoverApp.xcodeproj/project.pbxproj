@@ -13,6 +13,7 @@
 		C86F21982B6BE63C00DF4736 /* CreditCardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21972B6BE63C00DF4736 /* CreditCardStyle.swift */; };
 		C86F219A2B6BE66200DF4736 /* CreditCardTypeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21992B6BE66200DF4736 /* CreditCardTypeMenuView.swift */; };
 		C86F219C2B6BE6CA00DF4736 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F219B2B6BE6CA00DF4736 /* FormTextField.swift */; };
+		C86F219F2B6BE70700DF4736 /* AccountFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F219E2B6BE70700DF4736 /* AccountFormView.swift */; };
 		C8E904B92B693FFE000117FF /* MoneyMoverAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904B82B693FFE000117FF /* MoneyMoverAppApp.swift */; };
 		C8E904BB2B693FFE000117FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904BA2B693FFE000117FF /* ContentView.swift */; };
 		C8E904BD2B694000000117FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8E904BC2B694000000117FF /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		C86F21972B6BE63C00DF4736 /* CreditCardStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardStyle.swift; sourceTree = "<group>"; };
 		C86F21992B6BE66200DF4736 /* CreditCardTypeMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardTypeMenuView.swift; sourceTree = "<group>"; };
 		C86F219B2B6BE6CA00DF4736 /* FormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		C86F219E2B6BE70700DF4736 /* AccountFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountFormView.swift; sourceTree = "<group>"; };
 		C8E904B52B693FFE000117FF /* MoneyMoverApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyMoverApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E904B82B693FFE000117FF /* MoneyMoverAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyMoverAppApp.swift; sourceTree = "<group>"; };
 		C8E904BA2B693FFE000117FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C86F219D2B6BE6F000DF4736 /* AccountFormView */ = {
+			isa = PBXGroup;
+			children = (
+				C86F219E2B6BE70700DF4736 /* AccountFormView.swift */,
+			);
+			path = AccountFormView;
+			sourceTree = "<group>";
+		};
 		C8E904AC2B693FFE000117FF = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +135,7 @@
 		C8E904D02B6A6114000117FF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C86F219D2B6BE6F000DF4736 /* AccountFormView */,
 				C8E904C92B69448F000117FF /* Create Account */,
 				C8E904C62B694015000117FF /* Home */,
 			);
@@ -213,6 +224,7 @@
 				C8E904D82B6A92DA000117FF /* AccountHomeView.swift in Sources */,
 				C8E904CF2B6A2460000117FF /* AccountSummaryView.swift in Sources */,
 				C86F219C2B6BE6CA00DF4736 /* FormTextField.swift in Sources */,
+				C86F219F2B6BE70700DF4736 /* AccountFormView.swift in Sources */,
 				C86F219A2B6BE66200DF4736 /* CreditCardTypeMenuView.swift in Sources */,
 				C8E904D62B6A9185000117FF /* TransactionItemView.swift in Sources */,
 				C86F21942B6BE5CA00DF4736 /* ColorView.swift in Sources */,
