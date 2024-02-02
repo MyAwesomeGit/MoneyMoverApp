@@ -3,8 +3,9 @@ import SwiftUI
 
 struct CreditCardTypeMenuView: View {
     let logos = [
-        "mc-logo-selector",
-        "visa-logo-selector"
+        "mir-logo-selector",
+        "visa-logo-selector",
+        "mc-logo-selector"
     ]
     
     var body: some View {
@@ -12,6 +13,7 @@ struct CreditCardTypeMenuView: View {
             VStack(alignment: .leading, spacing: 3) {
                 Text("Select a card type")
                     .font(.system(size: 18))
+                    .fontWeight(.bold)
                     .foregroundColor(Color(red: -0.004, green: 0.239, blue: 0.43))
                     .padding(.leading, 10)
                 Divider()
@@ -23,6 +25,8 @@ struct CreditCardTypeMenuView: View {
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                         VStack {
                             Image(self.logos[index])
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
                             Image("checkmark-outline-selector")
                         }
                     }
@@ -42,3 +46,4 @@ struct CreditCardTypeMenuView_Previews: PreviewProvider {
             .previewLayout(.fixed(width: 400, height: 180))
     }
 }
+

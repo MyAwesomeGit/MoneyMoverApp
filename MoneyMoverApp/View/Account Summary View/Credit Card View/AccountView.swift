@@ -18,3 +18,10 @@ struct Account: View {
     }
 }
 
+
+struct Account_Previews: PreviewProvider {
+    static var previews: some View {
+        Account()
+    }
+}
+

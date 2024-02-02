@@ -167,6 +167,7 @@
 			children = (
 				C86F21912B6BE58D00DF4736 /* AccountTypeView.swift */,
 				C86F219B2B6BE6CA00DF4736 /* FormTextField.swift */,
+				C8E904CA2B69449F000117FF /* CardView.swift */,
 				C8E904C72B694024000117FF /* HomeHeaderView.swift */,
 				C8E904CC2B6A0F9F000117FF /* HomeSubmenuView.swift */,
 				C8E904D52B6A9185000117FF /* TransactionItemView.swift */,
@@ -180,7 +181,6 @@
 			children = (
 				C86F219D2B6BE6F000DF4736 /* Account Form View */,
 				C86F219E2B6BE70700DF4736 /* AccountFormView.swift */,
-				C8E904CA2B69449F000117FF /* CardView.swift */,
 				C86F21952B6BE60300DF4736 /* ColorButtonMenu.swift */,
 				C86F21932B6BE5CA00DF4736 /* ColorView.swift */,
 				C86F21992B6BE66200DF4736 /* CreditCardTypeMenuView.swift */,

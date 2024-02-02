@@ -7,6 +7,7 @@ struct AccountFormView: View {
     init() {
         UITableView.appearance().backgroundColor = UIColor.white
         UITableView.appearance().tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: Double.leastNonzeroMagnitude))
+        UITableView.appearance().tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: Double.leastNonzeroMagnitude))
         UITableView.appearance().separatorStyle = .none
     }
     
@@ -32,3 +33,4 @@ struct AccountFormView_Previews: PreviewProvider {
             .previewLayout(.fixed(width: 600, height: 200))
     }
 }
+

@@ -28,3 +28,9 @@ struct AvailableCreditLimitInfo: View {
     }
 }
 
+
+struct AvailableCreditLimitInfo_Previews: PreviewProvider {
+    static var previews: some View {
+        AvailableCreditLimitInfo()
+    }
+}

@@ -37,7 +37,14 @@ struct PaymentInfo: View {
             }
             .listRowBackground(Color.white)
         }
-        .frame(height: 200)
+        .frame(width: 410, height: 200)
+    }
+}
+
+
+struct PaymentInfo_Previews: PreviewProvider {
+    static var previews: some View {
+        PaymentInfo()
     }
 }
 

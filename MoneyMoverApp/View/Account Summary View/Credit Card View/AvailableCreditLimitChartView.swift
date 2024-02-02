@@ -18,3 +18,10 @@ struct AvailableCreditLimitChart: View {
     }
 }
 
+
+struct AvailableCreditLimitChart_Previews: PreviewProvider {
+    static var previews: some View {
+        AvailableCreditLimitChart()
+    }
+}
+

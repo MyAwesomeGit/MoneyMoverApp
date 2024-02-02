@@ -32,3 +32,4 @@ struct TransactionItemView_Previews: PreviewProvider {
     }
     
 }
+

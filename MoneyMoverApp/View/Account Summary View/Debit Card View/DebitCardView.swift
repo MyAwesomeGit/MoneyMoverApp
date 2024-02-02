@@ -11,3 +11,10 @@ struct DebitCard: View {
     }
 }
 
+
+struct DebitCard_Previews: PreviewProvider {
+    static var previews: some View {
+        DebitCard()
+    }
+}
+

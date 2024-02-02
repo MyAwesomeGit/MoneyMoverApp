@@ -14,3 +14,10 @@ struct TransactionDetails: View {
     }
 }
 
+
+struct TransactionDetails_Previews: PreviewProvider {
+    static var previews: some View {
+        TransactionDetails()
+    }
+}
+

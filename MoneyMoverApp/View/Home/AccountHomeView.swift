@@ -23,6 +23,7 @@ struct AccountHomeView: View {
 struct AccountHomeView_Previews: PreviewProvider {
     static var previews: some View {
         AccountHomeView()
+            .previewLayout(.fixed(width: 100, height: 200))
     }
 }
 

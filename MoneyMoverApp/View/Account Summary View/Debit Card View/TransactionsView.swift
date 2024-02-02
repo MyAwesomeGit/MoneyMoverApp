@@ -17,3 +17,10 @@ struct Transactions: View {
     }
 }
 
+
+struct Transactions_Previews: PreviewProvider {
+    static var previews: some View {
+        Transactions()
+    }
+}
+

@@ -35,3 +35,4 @@ struct AccountTypeView_Previews: PreviewProvider {
         AccountTypeView()
     }
 }
+

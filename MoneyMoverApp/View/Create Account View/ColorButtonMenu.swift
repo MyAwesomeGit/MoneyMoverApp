@@ -5,7 +5,7 @@ struct ColorButtonMenu: View {
     private var selectedSegment: Int = 0
     private var selectedColor: Color = Color(red: -0.004, green: 0.239, blue: 0.43)
     private var colors: [Color] = [
-        .blue,
+        Color(red: -0.004, green: 0.239, blue: 0.43),
         .black,
         .red,
         .green,
@@ -40,3 +40,4 @@ struct ColorButtonMenu_Previews: PreviewProvider {
             .previewLayout(.fixed(width: 300, height: 50))
     }
 }
+

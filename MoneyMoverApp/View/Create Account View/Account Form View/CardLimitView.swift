@@ -19,7 +19,7 @@ struct CardLimitView: View {
                 }).multilineTextAlignment(.trailing)
                     .font(.system(size: 18))
                     .padding(.trailing, limit == "" ? -5 : 10)
-
+                
                 Button(action: {
                     limit = ""
                 }) {
