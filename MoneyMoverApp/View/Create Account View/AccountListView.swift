@@ -17,7 +17,7 @@ struct AccountListView: View {
                             Spacer()
                             
                             NavigationLink(destination: AccountHomeView()) {
-                                
+                                CardListRow()
                             }.buttonStyle(PlainButtonStyle())
                             
                             Spacer()
