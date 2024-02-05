@@ -28,6 +28,7 @@
 		C86F21C12B6D1E2400DF4736 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21C02B6D1E2400DF4736 /* CreateAccountView.swift */; };
 		C86F21C32B6D1EA200DF4736 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21C22B6D1EA200DF4736 /* AccountListView.swift */; };
 		C86F21C52B6D1EEF00DF4736 /* CardListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F21C42B6D1EEF00DF4736 /* CardListRow.swift */; };
+		C86F21CB2B71279600DF4736 /* MoneyMoverApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C86F21C92B71279600DF4736 /* MoneyMoverApp.xcdatamodeld */; };
 		C8E904B92B693FFE000117FF /* MoneyMoverAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904B82B693FFE000117FF /* MoneyMoverAppApp.swift */; };
 		C8E904BB2B693FFE000117FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904BA2B693FFE000117FF /* ContentView.swift */; };
 		C8E904BD2B694000000117FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8E904BC2B694000000117FF /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		C86F21C02B6D1E2400DF4736 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		C86F21C22B6D1EA200DF4736 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
 		C86F21C42B6D1EEF00DF4736 /* CardListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListRow.swift; sourceTree = "<group>"; };
+		C86F21CA2B71279600DF4736 /* MoneyMoverApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoneyMoverApp.xcdatamodel; sourceTree = "<group>"; };
 		C8E904B52B693FFE000117FF /* MoneyMoverApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyMoverApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E904B82B693FFE000117FF /* MoneyMoverAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyMoverAppApp.swift; sourceTree = "<group>"; };
 		C8E904BA2B693FFE000117FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -130,6 +132,14 @@
 			path = "Debit Card View";
 			sourceTree = "<group>";
 		};
+		C86F21C82B71272C00DF4736 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C86F21C92B71279600DF4736 /* MoneyMoverApp.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C8E904AC2B693FFE000117FF = {
 			isa = PBXGroup;
 			children = (
@@ -150,7 +160,7 @@
 		C8E904B72B693FFE000117FF /* MoneyMoverApp */ = {
 			isa = PBXGroup;
 			children = (
-				C8E904E12B6BB0D2000117FF /* Modifiers */,
+				C86F21C82B71272C00DF4736 /* Model */,
 				C8E904D02B6A6114000117FF /* View */,
 				C8E904B82B693FFE000117FF /* MoneyMoverAppApp.swift */,
 				C8E904BA2B693FFE000117FF /* ContentView.swift */,
@@ -200,8 +210,9 @@
 		C8E904D02B6A6114000117FF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C86F21A62B6BE87A00DF4736 /* Account Summary View */,
 				C8E904C92B69448F000117FF /* Create Account View */,
+				C8E904E12B6BB0D2000117FF /* Modifiers */,
+				C86F21A62B6BE87A00DF4736 /* Account Summary View */,
 				C8E904C62B694015000117FF /* Home */,
 			);
 			path = View;
@@ -304,6 +315,7 @@
 				C86F21A32B6BE76700DF4736 /* LastNameView.swift in Sources */,
 				C86F21A82B6BE8A600DF4736 /* CreditCardView.swift in Sources */,
 				C8E904CD2B6A0F9F000117FF /* HomeSubmenuView.swift in Sources */,
+				C86F21CB2B71279600DF4736 /* MoneyMoverApp.xcdatamodeld in Sources */,
 				C8E904BB2B693FFE000117FF /* ContentView.swift in Sources */,
 				C8E904CB2B69449F000117FF /* CardView.swift in Sources */,
 				C86F21962B6BE60300DF4736 /* ColorButtonMenu.swift in Sources */,
@@ -530,6 +542,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C86F21C92B71279600DF4736 /* MoneyMoverApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C86F21CA2B71279600DF4736 /* MoneyMoverApp.xcdatamodel */,
+			);
+			currentVersion = C86F21CA2B71279600DF4736 /* MoneyMoverApp.xcdatamodel */;
+			path = MoneyMoverApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C8E904AD2B693FFE000117FF /* Project object */;
 }

@@ -37,3 +37,4 @@ struct AccountListView_Previews: PreviewProvider {
         AccountListView()
     }
 }
+
