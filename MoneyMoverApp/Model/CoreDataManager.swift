@@ -26,4 +26,15 @@ class CoreDataManager: ObservableObject {
             return self.persistentContainer.viewContext
         }
     }
+    
+    func save() {
+        let context = persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
+    }
 }
