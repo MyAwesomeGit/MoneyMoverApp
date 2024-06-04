@@ -5,7 +5,7 @@ struct CreditCard: View {
     var body: some View {
         VStack {
             VStack {
-                Account()
+//                Account()
                 AvailableCreditLimitInfo()
                 AvailableCreditLimitChart()
                 PaymentInfo()
