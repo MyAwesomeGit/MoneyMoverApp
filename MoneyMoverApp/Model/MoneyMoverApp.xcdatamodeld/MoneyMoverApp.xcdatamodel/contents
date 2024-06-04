@@ -7,6 +7,7 @@
         <attribute name="firstName" optional="YES" attributeType="String"/>
         <attribute name="lastName" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="card" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Card" inverseName="account" inverseEntity="Card"/>
     </entity>
     <entity name="Card" representedClassName="Card" syncable="YES" codeGenerationType="class">
         <attribute name="color" optional="YES" attributeType="String"/>
@@ -16,5 +17,6 @@
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="logo" optional="YES" attributeType="String"/>
         <attribute name="number" optional="YES" attributeType="String"/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="card" inverseEntity="Account"/>
     </entity>
 </model>
