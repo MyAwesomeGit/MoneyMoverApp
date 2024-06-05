@@ -1,20 +1,19 @@
-
 import SwiftUI
 
-struct DebitCard: View {
+struct DebitCardView: View {
     var body: some View {
         VStack {
-            Transactions()
+            TransactionsView()
+                .padding(.horizontal, 30)
             TransactionDetailsView()
         }
-        .padding(.horizontal, 10)
     }
 }
 
 
 struct DebitCard_Previews: PreviewProvider {
     static var previews: some View {
-        DebitCard()
+        DebitCardView()
     }
 }
 

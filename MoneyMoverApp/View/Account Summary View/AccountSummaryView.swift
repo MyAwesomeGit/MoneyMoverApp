@@ -8,7 +8,7 @@ struct AccountSummaryView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 CreditCard()
-                DebitCard()
+                DebitCardView()
             }
             .onAppear {
                 UITableView.appearance().tableFooterView = UIView()
