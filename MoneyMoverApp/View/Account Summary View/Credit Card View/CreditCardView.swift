@@ -3,18 +3,20 @@ import SwiftUI
 
 struct CreditCard: View {
     var body: some View {
-        VStack {
+        ZStack {
+            Color(.systemGray)
+                .edgesIgnoringSafeArea(.all)
             VStack {
-//                Account()
-                AvailableCreditLimitInfo()
-                AvailableCreditLimitChart()
-                PaymentInfo()
+                VStack {
+    //                Account()
+                    AvailableCreditLimitInfo()
+                        .padding(.horizontal, 20)
+                    AvailableCreditLimitChart()
+                    PaymentInfo()
+                }
+                Divider()
             }
-            .padding(.horizontal, 10)
-            Divider()
         }
-        .padding(.top, 10)
-        .background(Color.white)
     }
 }
 
@@ -24,4 +26,3 @@ struct CreditCard_Previews : PreviewProvider {
         CreditCard()
     }
 }
-
