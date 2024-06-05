@@ -70,7 +70,5 @@ struct CardView: View {
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         CardView()
-            .previewLayout(.fixed(width: 300, height: 180))
     }
 }
-
