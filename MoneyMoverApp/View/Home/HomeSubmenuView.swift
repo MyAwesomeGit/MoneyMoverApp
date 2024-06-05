@@ -40,6 +40,5 @@ struct HomeSubmenuView: View {
 struct HomeSubmenuView_Previews: PreviewProvider {
     static var previews: some View {
         HomeSubmenuView()
-            .previewLayout(.fixed(width: 600, height: 140))
     }
 }
