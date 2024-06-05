@@ -4,6 +4,8 @@ import SwiftUI
 struct AvailableCreditLimitChart: View {
     var body: some View {
         ZStack(alignment: .leading) {
+            Color(.systemGray)
+                .edgesIgnoringSafeArea(.all)
             Rectangle()
                 .fill(Color.gray)
                 .cornerRadius(4.5)
@@ -14,7 +16,6 @@ struct AvailableCreditLimitChart: View {
                 .cornerRadius(4.5)
                 .frame(width: 120, height: 10)
         }
-        .padding(.bottom)
     }
 }
 
