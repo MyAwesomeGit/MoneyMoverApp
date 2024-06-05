@@ -27,6 +27,6 @@ struct HomeHeaderView: View {
 struct HomeHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         HomeHeaderView()
-            .previewLayout(.fixed(width: 600, height: 80))
+            .aspectRatio(contentMode: .fit)
     }
 }
