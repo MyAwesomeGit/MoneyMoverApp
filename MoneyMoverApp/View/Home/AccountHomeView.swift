@@ -1,19 +1,22 @@
-
 import SwiftUI
 
 struct AccountHomeView: View {
     var body: some View {
         ZStack {
-            Color(.white)
+            Color(.systemGray)
                 .edgesIgnoringSafeArea(.all)
-            ScrollView {
-                VStack {
-                    HomeHeaderView()
-                    CardView()
-                    Divider()
-                    AccountSummaryView()
-                    HomeSubmenuView()
+            VStack {
+                HomeHeaderView()
+                    .padding(.horizontal, 20)
+                ScrollView {
+                    VStack {
+                        CardView()
+                        Divider()
+                        AccountSummaryView()
+                    }
                 }
+                HomeSubmenuView()
+                    .padding(.horizontal, 20)
             }
         }
     }
@@ -23,7 +26,6 @@ struct AccountHomeView: View {
 struct AccountHomeView_Previews: PreviewProvider {
     static var previews: some View {
         AccountHomeView()
-            .previewLayout(.fixed(width: 100, height: 200))
     }
 }
 
