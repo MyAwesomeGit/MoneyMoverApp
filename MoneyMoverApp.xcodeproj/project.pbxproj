@@ -33,6 +33,7 @@
 		C8E66C3E2C0F666B00269DDF /* Card+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E66C3D2C0F666B00269DDF /* Card+Extension.swift */; };
 		C8E66C402C0F66F700269DDF /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E66C3F2C0F66F700269DDF /* CoreDataManager.swift */; };
 		C8E66C432C0F689100269DDF /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E66C422C0F689100269DDF /* CreateAccountViewModel.swift */; };
+		C8E66C472C10BEFA00269DDF /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E66C462C10BEFA00269DDF /* ColorManager.swift */; };
 		C8E904B92B693FFE000117FF /* MoneyMoverAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904B82B693FFE000117FF /* MoneyMoverAppApp.swift */; };
 		C8E904BB2B693FFE000117FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904BA2B693FFE000117FF /* ContentView.swift */; };
 		C8E904BD2B694000000117FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8E904BC2B694000000117FF /* Assets.xcassets */; };
@@ -73,6 +74,7 @@
 		C8E66C3D2C0F666B00269DDF /* Card+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+Extension.swift"; sourceTree = "<group>"; };
 		C8E66C3F2C0F66F700269DDF /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		C8E66C422C0F689100269DDF /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		C8E66C462C10BEFA00269DDF /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		C8E904B52B693FFE000117FF /* MoneyMoverApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyMoverApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E904B82B693FFE000117FF /* MoneyMoverAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyMoverAppApp.swift; sourceTree = "<group>"; };
 		C8E904BA2B693FFE000117FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				C86F21972B6BE63C00DF4736 /* CreditCardStyle.swift */,
+				C8E66C462C10BEFA00269DDF /* ColorManager.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				C8E66C3E2C0F666B00269DDF /* Card+Extension.swift in Sources */,
 				C8E904CD2B6A0F9F000117FF /* HomeSubmenuView.swift in Sources */,
 				C86F21CB2B71279600DF4736 /* MoneyMoverApp.xcdatamodeld in Sources */,
+				C8E66C472C10BEFA00269DDF /* ColorManager.swift in Sources */,
 				C8E66C402C0F66F700269DDF /* CoreDataManager.swift in Sources */,
 				C8E904BB2B693FFE000117FF /* ContentView.swift in Sources */,
 				C8E904CB2B69449F000117FF /* CardView.swift in Sources */,
