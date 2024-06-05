@@ -133,6 +133,7 @@
 		C86F21B22B6BE98F00DF4736 /* Debit Card View */ = {
 			isa = PBXGroup;
 			children = (
+				C8E904D52B6A9185000117FF /* TransactionItemView.swift */,
 				C86F21B32B6BE99700DF4736 /* DebitCardView.swift */,
 				C86F21B52B6BE9BD00DF4736 /* TransactionsView.swift */,
 				C86F21B72B6BE9DB00DF4736 /* TransactionDetailsView.swift */,
@@ -206,7 +207,6 @@
 				C8E904CA2B69449F000117FF /* CardView.swift */,
 				C8E904C72B694024000117FF /* HomeHeaderView.swift */,
 				C8E904CC2B6A0F9F000117FF /* HomeSubmenuView.swift */,
-				C8E904D52B6A9185000117FF /* TransactionItemView.swift */,
 				C8E904D72B6A92DA000117FF /* AccountHomeView.swift */,
 			);
 			path = Home;

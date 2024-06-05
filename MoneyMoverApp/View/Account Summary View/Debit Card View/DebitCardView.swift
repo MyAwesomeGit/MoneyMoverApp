@@ -5,7 +5,7 @@ struct DebitCard: View {
     var body: some View {
         VStack {
             Transactions()
-            TransactionDetails()
+            TransactionDetailsView()
         }
         .padding(.horizontal, 10)
     }

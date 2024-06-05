@@ -1,23 +1,28 @@
-
 import SwiftUI
 
-struct TransactionDetails: View {
+struct TransactionDetailsView: View {
     var body: some View {
-        VStack {
-            List {
-                ForEach (0 ..< 7) { _ in
-                    TransactionItemView()
+        ZStack {
+            Color(.systemGray)
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                ScrollView {
+                    ForEach (0 ..< 7) { _ in
+                        TransactionItemView()
+                        Divider()
+                    }
                 }
             }
+            .padding(.horizontal, 5)
         }
-        .padding(.horizontal, 10)
     }
 }
 
 
 struct TransactionDetails_Previews: PreviewProvider {
     static var previews: some View {
-        TransactionDetails()
+        TransactionDetailsView()
     }
 }
 
