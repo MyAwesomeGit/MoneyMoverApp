@@ -3,17 +3,17 @@ import SwiftUI
 struct PaymentInfo: View {
     var body: some View {
         ZStack {
-            Color(.systemGray)
+            Color(mainBackgroundColor)
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 HStack {
                     Text("Last bill amount")
                         .font(.system(size: 20))
-                        .foregroundColor(.black)
+                        .foregroundColor(secondaryFontColor)
                     Spacer()
                     Text("200 000 ₽")
                         .font(.system(size: 20))
-                        .foregroundColor(.black)
+                        .foregroundColor(mainFontColor)
                 }
                 .listRowBackground(Color.white)
                 
@@ -22,11 +22,11 @@ struct PaymentInfo: View {
                 HStack {
                     Text("Payment due date")
                         .font(.system(size: 20))
-                        .foregroundColor(.black)
+                        .foregroundColor(secondaryFontColor)
                     Spacer()
                     Text("Feb 20, 2024")
                         .font(.system(size: 20))
-                        .foregroundColor(.black)
+                        .foregroundColor(mainFontColor)
                 }
                 .listRowBackground(Color.white)
                 Divider()
@@ -34,11 +34,11 @@ struct PaymentInfo: View {
                 HStack {
                     Text("Min. amount due date")
                         .font(.system(size: 20))
-                        .foregroundColor(.black)
+                        .foregroundColor(secondaryFontColor)
                     Spacer()
                     Text("50 000 ₽")
                         .font(.system(size: 20))
-                        .foregroundColor(.black)
+                        .foregroundColor(mainFontColor)
                 }
             }
             .padding(.all)

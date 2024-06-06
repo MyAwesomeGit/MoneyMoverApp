@@ -4,27 +4,27 @@ import SwiftUI
 struct AvailableCreditLimitInfo: View {
     var body: some View {
         ZStack {
-            Color(.systemGray)
+            Color(mainBackgroundColor)
                 .edgesIgnoringSafeArea(.all)
             HStack {
                 VStack(alignment: .leading, spacing: 0) {
                     Text("Credit utilized")
                         .font(.system(size: 18))
-                        .foregroundColor(Color(.black))
+                        .foregroundColor(Color(secondaryFontColor))
                     Text("100 000 ₽")
                         .font(.system(size: 24))
                         .fontWeight(.bold)
-                        .foregroundColor(Color(.black))
+                        .foregroundColor(Color(mainFontColor))
                 }
                 Spacer()
                 VStack(alignment: .trailing, spacing: 0) {
                     Text("Available credit limit")
                         .font(.system(size: 18))
-                        .foregroundColor(Color(.black))
+                        .foregroundColor(Color(secondaryFontColor))
                     Text("500 000 ₽")
                         .font(.system(size: 24))
                         .fontWeight(.bold)
-                        .foregroundColor(Color(.black))
+                        .foregroundColor(Color(mainFontColor))
                 }
             }
             .padding(.top, 10)

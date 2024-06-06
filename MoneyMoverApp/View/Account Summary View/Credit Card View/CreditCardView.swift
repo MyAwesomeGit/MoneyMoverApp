@@ -1,10 +1,10 @@
 
 import SwiftUI
 
-struct CreditCard: View {
+struct CreditCardView: View {
     var body: some View {
         ZStack {
-            Color(.systemGray)
+            Color(mainBackgroundColor)
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 VStack {

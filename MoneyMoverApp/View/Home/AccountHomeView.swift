@@ -3,7 +3,7 @@ import SwiftUI
 struct AccountHomeView: View {
     var body: some View {
         ZStack {
-            Color(.systemGray)
+            Color(mainBackgroundColor)
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 HomeHeaderView()

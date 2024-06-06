@@ -4,7 +4,7 @@ import SwiftUI
 struct AccountSummaryView: View {
     var body: some View {
         ZStack {
-            Color(.systemGray)
+            Color(mainBackgroundColor)
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 CreditCard()
