@@ -8,11 +8,14 @@ struct TransactionItemView: View {
                 .edgesIgnoringSafeArea(.all)
             
             HStack {
-                Image("icon-payment-from")
+                Image(systemName: "rublesign.circle")
+                    .font(.system(size: 24))
+                    .foregroundColor(Color(mainFontColor))
+                
                 VStack(alignment: .leading) {
                     Text("Payment")
                         .font(.system(size: 24))
-                        .foregroundColor(Color(secondaryFontColor))
+                        .foregroundColor(Color(mainFontColor))
                     Text("Payment from Carl")
                         .font(.system(size: 18))
                         .foregroundColor(Color(secondaryFontColor))
@@ -25,9 +28,9 @@ struct TransactionItemView: View {
                         .foregroundColor(Color(mainFontColor))
                     Text("Jan 31")
                         .font(.system(size: 18))
+                        .foregroundColor(Color(secondaryFontColor))
                 }
             }
-            
         }
     }
 }
@@ -37,6 +40,5 @@ struct TransactionItemView_Previews: PreviewProvider {
     static var previews: some View {
         TransactionItemView()
     }
-    
-}
 
+}
