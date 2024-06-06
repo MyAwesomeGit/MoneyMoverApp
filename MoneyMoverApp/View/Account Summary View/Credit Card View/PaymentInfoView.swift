@@ -1,3 +1,4 @@
+
 import SwiftUI
 
 struct PaymentInfo: View {
@@ -13,6 +14,7 @@ struct PaymentInfo: View {
                     Spacer()
                     Text("200 000 ₽")
                         .font(.system(size: 20))
+                        .bold()
                         .foregroundColor(mainFontColor)
                 }
                 .listRowBackground(Color.white)
@@ -26,6 +28,7 @@ struct PaymentInfo: View {
                     Spacer()
                     Text("Feb 20, 2024")
                         .font(.system(size: 20))
+                        .bold()
                         .foregroundColor(mainFontColor)
                 }
                 .listRowBackground(Color.white)
@@ -38,6 +41,7 @@ struct PaymentInfo: View {
                     Spacer()
                     Text("50 000 ₽")
                         .font(.system(size: 20))
+                        .bold()
                         .foregroundColor(mainFontColor)
                 }
             }
