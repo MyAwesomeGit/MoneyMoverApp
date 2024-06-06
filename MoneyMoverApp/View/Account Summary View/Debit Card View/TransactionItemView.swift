@@ -4,7 +4,7 @@ import SwiftUI
 struct TransactionItemView: View {
     var body: some View {
         ZStack {
-            Color(.systemGray)
+            Color(mainBackgroundColor)
                 .edgesIgnoringSafeArea(.all)
             
             HStack {
@@ -12,21 +12,22 @@ struct TransactionItemView: View {
                 VStack(alignment: .leading) {
                     Text("Payment")
                         .font(.system(size: 24))
-                        .foregroundColor(Color(red: -0.004, green: 0.239, blue: 0.43))
+                        .foregroundColor(Color(secondaryFontColor))
                     Text("Payment from Carl")
                         .font(.system(size: 18))
+                        .foregroundColor(Color(secondaryFontColor))
                 }
                 
                 VStack(alignment: .trailing) {
                     Text("+ 5 000 ₽")
                         .font(.system(size: 24))
                         .fontWeight(.bold)
-                        .foregroundColor(Color(red: -0.004, green: 0.239, blue: 0.43))
+                        .foregroundColor(Color(mainFontColor))
                     Text("Jan 31")
                         .font(.system(size: 18))
                 }
             }
-
+            
         }
     }
 }
