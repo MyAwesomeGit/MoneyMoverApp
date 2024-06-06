@@ -7,7 +7,8 @@ struct AccountSummaryView: View {
             Color(mainBackgroundColor)
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                CreditCard()
+                CreditCardView()
+                    .aspectRatio(contentMode: .fit)
                 DebitCardView()
             }
             .onAppear {
