@@ -1,9 +1,10 @@
+
 import SwiftUI
 
 struct TransactionDetailsView: View {
     var body: some View {
         ZStack {
-            Color(.systemGray)
+            Color(mainBackgroundColor)
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
