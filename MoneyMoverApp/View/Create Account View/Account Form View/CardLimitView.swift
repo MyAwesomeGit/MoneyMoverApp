@@ -34,7 +34,7 @@ struct CardLimitView: View {
             Divider()
         }
         .frame(height: 40)
-        .animation(.easeInOut)
+        .animation(.easeInOut, value: limit)
         .padding(.top, 10)
     }
 }
