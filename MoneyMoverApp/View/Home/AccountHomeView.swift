@@ -1,3 +1,4 @@
+
 import SwiftUI
 
 struct AccountHomeView: View {
@@ -8,6 +9,7 @@ struct AccountHomeView: View {
             VStack {
                 HomeHeaderView()
                     .padding(.horizontal, 20)
+                    .aspectRatio(contentMode: .fit)
                 ScrollView {
                     VStack {
                         CardView()
@@ -17,6 +19,9 @@ struct AccountHomeView: View {
                 }
                 HomeSubmenuView()
                     .padding(.horizontal, 20)
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.top, 20)
+                    .padding(.bottom, 5)
             }
         }
     }
