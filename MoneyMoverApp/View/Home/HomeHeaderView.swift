@@ -3,23 +3,28 @@ import SwiftUI
 
 struct HomeHeaderView: View {
     var body: some View {
-        HStack(alignment: .center) {
-            VStack(alignment: .leading, spacing: -8) {
-                Text("Jack")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                Text("The Financier")
-                    .font(.title)
+        ZStack {
+            Color(mainBackgroundColor)
+                .edgesIgnoringSafeArea(.all)
+            
+            HStack(alignment: .center) {
+                VStack(alignment: .leading, spacing: -8) {
+                    Text("Jack")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                    Text("The Financier")
+                        .font(.title)
+                }
+                .foregroundColor(Color(mainFontColor))
+                Spacer()
+                Image("avatar")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 90, height: 120)
+                    .clipShape(Circle())
             }
-            .foregroundColor(Color(red: -0.004, green: 0.239, blue: 0.43))
-            Spacer()
-            Image("avatar")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 90, height: 120)
-                .clipShape(Circle())
+            .padding(.horizontal, 20)
         }
-        .padding(.horizontal, 20)
     }
 }
 
