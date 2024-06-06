@@ -3,36 +3,37 @@ import SwiftUI
 
 struct HomeSubmenuView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            VStack(alignment: .leading, spacing: -8) {
-                Text("Quick services")
-                    .font(.system(size: 18))
-                    .fontWeight(.bold)
+        ZStack {
+            Color(mainBackgroundColor)
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack(alignment: .leading) {
+                HStack {
+                    VStack {
+                        Image(systemName: "plus.rectangle")
+                        Text("New card")
+                    }
+                    Spacer()
+                    VStack {
+                        Image(systemName: "creditcard")
+                        Text("Cards")
+                    }
+                    Spacer()
+                    VStack {
+                        Image(systemName: "map")
+                        Text("Locations")
+                    }
+                    Spacer()
+                    VStack {
+                        Image(systemName: "rublesign.arrow.circlepath")
+                        Text("Transactions")
+                    }
+                }
+                .foregroundColor(Color(secondaryFontColor))
+                .font(.system(size: 18))
             }
-            .foregroundColor(Color(red: -0.004, green: 0.239, blue: 0.43))
-            HStack {
-                VStack {
-                    Image("icon-add-new")
-                    Text("Add new")
-                }
-                Spacer()
-                VStack {
-                    Image("icon-cards")
-                    Text("Cards")
-                }
-                Spacer()
-                VStack {
-                    Image("icon-locations")
-                    Text("Locations")
-                }
-                Spacer()
-                VStack {
-                    Image("icon-transactions")
-                    Text("Transactions")
-                }
-            }
+            .padding(.horizontal, 20)
         }
-        .padding(.horizontal, 20)
     }
 }
 
