@@ -1,3 +1,4 @@
+
 import SwiftUI
 
 struct DebitCardView: View {
@@ -5,11 +6,11 @@ struct DebitCardView: View {
         ZStack {
             Color(mainBackgroundColor)
                 .edgesIgnoringSafeArea(.all)
-        }
-        VStack {
-            TransactionsView()
-                .padding(.horizontal, 30)
-            TransactionDetailsView()
+            VStack {
+                TransactionsView()
+                    .aspectRatio(contentMode: .fit)
+                TransactionDetailsView()
+            }
         }
     }
 }
