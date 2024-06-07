@@ -45,6 +45,7 @@
 		C8E904D62B6A9185000117FF /* TransactionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904D52B6A9185000117FF /* TransactionItemView.swift */; };
 		C8E904D82B6A92DA000117FF /* AccountHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E904D72B6A92DA000117FF /* AccountHomeView.swift */; };
 		C8E904DA2B6A9745000117FF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C8E904D92B6A9745000117FF /* README.md */; };
+		C8F75C602C13443A00C0D525 /* MockAccountPreviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F75C5F2C13443A00C0D525 /* MockAccountPreviewService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		C8E904D52B6A9185000117FF /* TransactionItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionItemView.swift; sourceTree = "<group>"; };
 		C8E904D72B6A92DA000117FF /* AccountHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountHomeView.swift; sourceTree = "<group>"; };
 		C8E904D92B6A9745000117FF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C8F75C5F2C13443A00C0D525 /* MockAccountPreviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAccountPreviewService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				C8E66C3B2C0F658300269DDF /* Account+Extension.swift */,
 				C8E66C3D2C0F666B00269DDF /* Card+Extension.swift */,
 				C8E66C3F2C0F66F700269DDF /* CoreDataManager.swift */,
+				C8F75C5F2C13443A00C0D525 /* MockAccountPreviewService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				C8E66C472C10BEFA00269DDF /* ColorManager.swift in Sources */,
 				C8E66C402C0F66F700269DDF /* CoreDataManager.swift in Sources */,
 				C8E904BB2B693FFE000117FF /* ContentView.swift in Sources */,
+				C8F75C602C13443A00C0D525 /* MockAccountPreviewService.swift in Sources */,
 				C8E904CB2B69449F000117FF /* CardView.swift in Sources */,
 				C86F21962B6BE60300DF4736 /* ColorButtonMenu.swift in Sources */,
 				C86F21C32B6D1EA200DF4736 /* AccountListView.swift in Sources */,
