@@ -36,7 +36,8 @@ class CreateAccountViewModel: ObservableObject {
         }
     }
     
-    func createRandomBalance() {
+    func createRandomBalance() -> Int {
+        return Int.random(in: 1000...1000000)
     }
     
     func clear() {
