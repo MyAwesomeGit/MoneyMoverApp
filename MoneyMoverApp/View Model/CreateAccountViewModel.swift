@@ -73,6 +73,12 @@ class CreateAccountViewModel: ObservableObject {
     }
     
     func clear() {
+        firstName = ""
+        lastName = ""
+        cvv = ""
+        selectedAccountType = 0
+        selectedCardType = 0
+        selectedCardColorType = 0
     }
 
 }
