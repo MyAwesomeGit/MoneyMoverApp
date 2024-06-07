@@ -23,6 +23,6 @@ struct CreditCardView: View {
 
 struct CreditCard_Previews : PreviewProvider {
     static var previews: some View {
-        CreditCard()
+        CreditCardView()
     }
 }

@@ -1,28 +1,40 @@
 
 import SwiftUI
 
-struct AvailableCreditLimitChart: View {
+struct AvailableCreditLimitInfo: View {
     var body: some View {
-        ZStack(alignment: .leading) {
+        ZStack {
             Color(mainBackgroundColor)
                 .edgesIgnoringSafeArea(.all)
-            Rectangle()
-                .fill(Color.gray)
-                .cornerRadius(4.5)
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .frame(height: 10)
-            Rectangle()
-                .fill(Color(red: -0.004, green: 0.239, blue: 0.43))
-                .cornerRadius(4.5)
-                .frame(width: 120, height: 10)
+            HStack {
+                VStack(alignment: .leading, spacing: 0) {
+                    Text("Credit utilized")
+                        .font(.system(size: 18))
+                        .foregroundColor(Color(secondaryFontColor))
+                    Text("100 000 ₽")
+                        .font(.system(size: 24))
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(mainFontColor))
+                }
+                Spacer()
+                VStack(alignment: .trailing, spacing: 0) {
+                    Text("Available credit limit")
+                        .font(.system(size: 18))
+                        .foregroundColor(Color(secondaryFontColor))
+                    Text("500 000 ₽")
+                        .font(.system(size: 24))
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(mainFontColor))
+                }
+            }
+            .padding(.top, 10)
         }
     }
 }
 
 
-struct AvailableCreditLimitChart_Previews: PreviewProvider {
+struct AvailableCreditLimitInfo_Previews: PreviewProvider {
     static var previews: some View {
-        AvailableCreditLimitChart()
+        AvailableCreditLimitInfo()
     }
 }
-
