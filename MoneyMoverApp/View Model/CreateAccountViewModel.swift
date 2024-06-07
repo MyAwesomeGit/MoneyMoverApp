@@ -18,6 +18,38 @@ enum CardType: String {
 
 class CreateAccountViewModel: ObservableObject {
     
+    @Published var firstName = ""
+    @Published var lastName = ""
+    @Published var limit = ""
+    @Published var selectedAccountType = 0
+    @Published var selectedCardType = 0
+    @Published var selectedCardColorType = 0
+    @Published var selectedCardColor: UIColor = .systemTeal
+    @Published var displayExpDate = ""
+    @Published var ccNumber = ""
+    @Published var cvv = ""
+    @Published var expDate = Date()
+    
+    var creditLimit: Float = 0.0
+    var selectorLogos = ["mc-logo-selector", "visa-logo-selector", "mir-logo-selector"]
+    var cardLogos = ["mc-logo-selector", "visa-logo", "mir-logo"]
+    var accountTypes: [String] = [AccountType.debit.rawValue, AccountType.creditcard.rawValue]
+    var colors: [Color] = [.yellow,
+                           .blue,
+                           .black,
+                           .red,
+                           .pink,
+                           .purple,
+                           .gray]
+    
+    var uiColors: [UIColor] = [.systemMint,
+                               .blue,
+                               .black,
+                               .red,
+                               .systemPink,
+                               .purple,
+                               .gray]
+
     func createAccount() {
     }
     
