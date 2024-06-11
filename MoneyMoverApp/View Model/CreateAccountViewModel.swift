@@ -86,7 +86,7 @@ class CreateAccountViewModel: ObservableObject {
 extension CreateAccountViewModel {
     
     func initAccount() {
-        expDate = generateCardExpiration()
+        expDate = generateCardExpiration(amount: 2)
         ccNumber = generateCCNumber()
         cvv = generateCVV()
     }
@@ -121,8 +121,8 @@ extension CreateAccountViewModel {
         nowComponents.day = Calendar.current.component(.day, from: now)
         nowComponents.timeZone = NSTimeZone.local
         
-        if let currentDate = calendar.date(from: nowComponents) {
-            return currentDate
+        if let now = calendar.date(from: nowComponents) {
+            return now
         }
         
         return now
