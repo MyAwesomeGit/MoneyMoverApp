@@ -82,16 +82,39 @@ class CreateAccountViewModel: ObservableObject {
     }
 }
 
+
 extension CreateAccountViewModel {
+    
     func initAccount() {
         expDate = generateCardExpiration()
         ccNumber = generateCCNumber()
         cvv = generateCVV()
     }
     
-    func generateCardExpiration() -> Date {
-
+    
+    func generateCardExpiration(amount: Int) -> Date {
+        let currentDate = getCurrentDate()
+        var dateComponent = DateComponents()
+        
+        dateComponent.year = amount
+        dateComponent.month = 1
+        
+        if let futureDate = Calendar.current.date(byAdding: dateComponent, to: currentDate) {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "MM/yy"
+            self.displayExpDate = formatter.string(from: futureDate)
+            
+            return futureDate
+        }
+        
+        return currentDate
     }
+    
+    
+    func getCurrentDate() -> Date {
+        
+    }
+    
     
     func generateCCNumber() -> String {
         
