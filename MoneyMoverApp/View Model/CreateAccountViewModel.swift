@@ -126,16 +126,27 @@ extension CreateAccountViewModel {
         }
         
         return now
-        
     }
     
     
     func generateCCNumber() -> String {
-        
+        let result = getRandomFourDigitNumber()
+        let result2 = getRandomFourDigitNumber()
+        let result3 = getRandomFourDigitNumber()
+        let result4 = getRandomFourDigitNumber()
+        return "\(result) \(result2) \(result3) \(result4)"
     }
     
+    
+    func getRandomFourDigitNumber() -> String {
+        let randomNumber = Int.random(in: 1000...9999)
+        return String(randomNumber)
+    }
+
+    
     func generateCVV() -> String {
-        
+        let cvv = Int.random(in: 100...999)
+        return String(cvv)
     }
     
 }
