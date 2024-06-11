@@ -82,3 +82,10 @@ class CreateAccountViewModel: ObservableObject {
     }
 
 }
+
+
+extension CreateAccountViewModel {
+    func initAccount() {
+        
+    }
+}
