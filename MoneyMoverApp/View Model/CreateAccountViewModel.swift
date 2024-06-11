@@ -112,6 +112,20 @@ extension CreateAccountViewModel {
     
     
     func getCurrentDate() -> Date {
+        let calendar = Calendar.current
+        let now = Date()
+        var nowComponents = DateComponents()
+        
+        nowComponents.year = Calendar.current.component(.year, from: now)
+        nowComponents.month = Calendar.current.component(.month, from: now)
+        nowComponents.day = Calendar.current.component(.day, from: now)
+        nowComponents.timeZone = NSTimeZone.local
+        
+        if let currentDate = calendar.date(from: nowComponents) {
+            return currentDate
+        }
+        
+        return now
         
     }
     
