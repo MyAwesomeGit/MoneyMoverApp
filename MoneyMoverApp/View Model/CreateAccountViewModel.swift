@@ -49,7 +49,7 @@ class CreateAccountViewModel: ObservableObject {
                                .systemPink,
                                .purple,
                                .gray]
-
+    
     func createAccount() {
     }
     
@@ -80,12 +80,25 @@ class CreateAccountViewModel: ObservableObject {
         selectedCardType = 0
         selectedCardColorType = 0
     }
-
 }
-
 
 extension CreateAccountViewModel {
     func initAccount() {
+        expDate = generateCardExpiration()
+        ccNumber = generateCCNumber()
+        cvv = generateCVV()
+    }
+    
+    func generateCardExpiration() -> Date {
+
+    }
+    
+    func generateCCNumber() -> String {
         
     }
+    
+    func generateCVV() -> String {
+        
+    }
+    
 }
