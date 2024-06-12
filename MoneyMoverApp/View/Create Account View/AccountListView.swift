@@ -6,6 +6,9 @@ struct AccountListView: View {
     @FetchRequest(fetchRequest: Account.accountFetchRequest)
     var accounts: FetchedResults<Account>
     
+    @State var showCreateAccountScreen = false
+    let model = CreateAccountViewModel()
+    
     init() {
         UITableView.appearance().separatorStyle = .none
         UITableViewCell.appearance().backgroundColor = .clear
@@ -39,6 +42,7 @@ struct AccountListView: View {
 struct AccountListView_Previews: PreviewProvider {
     static var previews: some View {
         AccountListView()
+            .environment(\.managedObjectContext, MockAccountPreviewService.managedObjectContext)
     }
 }
 
