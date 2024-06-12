@@ -2,22 +2,26 @@
 import SwiftUI
 
 struct AccountListView: View {
+    
+    @FetchRequest(fetchRequest: Account.accountFetchRequest)
+    var accounts: FetchedResults<Account>
+    
     init() {
-            UITableView.appearance().separatorStyle = .none
-            UITableViewCell.appearance().backgroundColor = .clear
-            UITableView.appearance().backgroundColor = .clear
-        }
+        UITableView.appearance().separatorStyle = .none
+        UITableViewCell.appearance().backgroundColor = .clear
+        UITableView.appearance().backgroundColor = .clear
+    }
     
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
                 List {
-                    ForEach(0..<4) { account in
+                    ForEach(accounts) { account in
                         HStack {
                             Spacer()
                             
-                            NavigationLink(destination: AccountHomeView()) {
-                                CardListRow()
+                            NavigationLink(destination: AccountHomeView(account: account)) {
+                                CardListRow(account: account)
                             }.buttonStyle(PlainButtonStyle())
                             
                             Spacer()
