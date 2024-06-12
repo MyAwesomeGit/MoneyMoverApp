@@ -2,6 +2,8 @@
 import SwiftUI
 
 struct HomeHeaderView: View {
+    @ObservedObject var account: Account
+
     var body: some View {
         ZStack {
             Color(mainBackgroundColor)
@@ -31,7 +33,7 @@ struct HomeHeaderView: View {
 
 struct HomeHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeHeaderView()
+        HomeHeaderView(account: MockAccountPreviewService.creditAccount)
             .aspectRatio(contentMode: .fit)
     }
 }

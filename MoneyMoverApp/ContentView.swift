@@ -2,14 +2,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var model: CreateAccountViewModel
+    
     var body: some View {
-        VStack {
-            AccountHomeView()
+        ZStack {
+            CreateAccountView()
+            
+            if model.hasAccounts() {
+                AccountListView()
+                    .padding()
+            }
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+
+struct ContentView_Preview: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environmentObject(CreateAccountViewModel())
+    }
 }

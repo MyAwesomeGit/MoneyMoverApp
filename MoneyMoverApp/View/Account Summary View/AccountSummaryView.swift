@@ -2,14 +2,18 @@
 import SwiftUI
 
 struct AccountSummaryView: View {
+    @ObservedObject var account: Account
+    
     var body: some View {
         ZStack {
             Color(mainBackgroundColor)
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                CreditCardView()
-                    .aspectRatio(contentMode: .fit)
-                DebitCardView()
+                if account.type == AccountType.creditcard.rawValue {
+                    CreditCardView()
+                } else {
+                    DebitCardView()
+                }
             }
             .onAppear {
                 UITableView.appearance().tableFooterView = UIView()
@@ -22,6 +26,6 @@ struct AccountSummaryView: View {
 
 struct AccountSummaryView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountSummaryView()
+        AccountSummaryView(account: MockAccountPreviewService.creditAccount)
     }
 }

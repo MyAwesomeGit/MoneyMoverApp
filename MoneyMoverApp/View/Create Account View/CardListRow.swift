@@ -2,6 +2,8 @@
 import SwiftUI
 
 struct CardListRow: View {
+    @ObservedObject var account: Account
+    
     var body: some View {
         ZStack {
             HStack(spacing: -116) {
@@ -69,7 +71,6 @@ struct CardListRow: View {
 
 struct CardListRow_Previews: PreviewProvider {
     static var previews: some View {
-        CardListRow()
+        CardListRow(account: MockAccountPreviewService.creditAccount)
     }
 }
-

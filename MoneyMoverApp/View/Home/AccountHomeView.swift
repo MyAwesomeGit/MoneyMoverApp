@@ -2,19 +2,21 @@
 import SwiftUI
 
 struct AccountHomeView: View {
+    @ObservedObject var account: Account
+    
     var body: some View {
         ZStack {
             Color(mainBackgroundColor)
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                HomeHeaderView()
+                HomeHeaderView(account: account)
                     .padding(.horizontal, 20)
                     .aspectRatio(contentMode: .fit)
                 ScrollView {
                     VStack {
-                        CardView()
+                        CardListRow(account: account)
                         Divider()
-                        AccountSummaryView()
+                        AccountSummaryView(account: account)
                     }
                 }
                 HomeSubmenuView()
@@ -30,7 +32,7 @@ struct AccountHomeView: View {
 
 struct AccountHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountHomeView()
+        AccountHomeView(account: MockAccountPreviewService.creditAccount)
     }
 }
 

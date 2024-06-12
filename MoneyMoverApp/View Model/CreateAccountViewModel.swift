@@ -49,7 +49,7 @@ class CreateAccountViewModel: ObservableObject {
                                .systemPink,
                                .purple,
                                .gray]
-
+    
     func createAccount() {
     }
     
@@ -80,5 +80,73 @@ class CreateAccountViewModel: ObservableObject {
         selectedCardType = 0
         selectedCardColorType = 0
     }
+}
 
+
+extension CreateAccountViewModel {
+    
+    func initAccount() {
+        expDate = generateCardExpiration(amount: 2)
+        ccNumber = generateCCNumber()
+        cvv = generateCVV()
+    }
+    
+    
+    func generateCardExpiration(amount: Int) -> Date {
+        let currentDate = getCurrentDate()
+        var dateComponent = DateComponents()
+        
+        dateComponent.year = amount
+        dateComponent.month = 1
+        
+        if let futureDate = Calendar.current.date(byAdding: dateComponent, to: currentDate) {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "MM/yy"
+            self.displayExpDate = formatter.string(from: futureDate)
+            
+            return futureDate
+        }
+        
+        return currentDate
+    }
+    
+    
+    func getCurrentDate() -> Date {
+        let calendar = Calendar.current
+        let now = Date()
+        var nowComponents = DateComponents()
+        
+        nowComponents.year = Calendar.current.component(.year, from: now)
+        nowComponents.month = Calendar.current.component(.month, from: now)
+        nowComponents.day = Calendar.current.component(.day, from: now)
+        nowComponents.timeZone = NSTimeZone.local
+        
+        if let now = calendar.date(from: nowComponents) {
+            return now
+        }
+        
+        return now
+    }
+    
+    
+    func generateCCNumber() -> String {
+        let result = getRandomFourDigitNumber()
+        let result2 = getRandomFourDigitNumber()
+        let result3 = getRandomFourDigitNumber()
+        let result4 = getRandomFourDigitNumber()
+        return "\(result) \(result2) \(result3) \(result4)"
+    }
+    
+    
+    func getRandomFourDigitNumber() -> String {
+        let randomNumber = Int.random(in: 1000...9999)
+        return String(randomNumber)
+    }
+
+    
+    func generateCVV() -> String {
+        let cvv = Int.random(in: 100...999)
+        return String(cvv)
+    }
+    
 }
