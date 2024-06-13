@@ -9,14 +9,25 @@ struct HomeHeaderView: View {
             Color(mainBackgroundColor)
                 .edgesIgnoringSafeArea(.all)
             
-            HStack(alignment: .center) {
-                VStack(alignment: .leading, spacing: -8) {
-                    Text("Jack")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                    Text("The Financier")
-                        .font(.title)
-                }
+            HStack(alignment:.center) {
+                            VStack(alignment:.leading, spacing: -8) {
+                                if let firstName = account.firstName {
+                                    Text("\(firstName)")
+                                       .font(.largeTitle)
+                                       .fontWeight(.bold)
+                                } else {
+                                    Text("")
+                                       .font(.largeTitle)
+                                       .fontWeight(.bold)
+                                }
+                                if let lastName = account.lastName {
+                                    Text("\(lastName)")
+                                       .font(.title)
+                                } else {
+                                    Text("")
+                                       .font(.title)
+                                }
+                            }
                 .foregroundColor(Color(mainFontColor))
                 Spacer()
                 Image("avatar")
