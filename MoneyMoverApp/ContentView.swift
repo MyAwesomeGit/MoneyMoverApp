@@ -2,11 +2,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var model: CreateAccountViewModel
+    @StateObject private var model = CreateAccountViewModel()
     
     var body: some View {
         ZStack {
-            CreateAccountView()
+            CreateAccountView().environmentObject(model)
             
             if model.hasAccounts() {
                 AccountListView()
