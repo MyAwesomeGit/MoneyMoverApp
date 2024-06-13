@@ -2,40 +2,31 @@
 import SwiftUI
 
 struct CreditCardTypeMenuView: View {
-    let logos = [
-        "mir-logo-selector",
-        "visa-logo-selector",
-        "mc-logo-selector"
-    ]
+    
+    @EnvironmentObject var model: CreateAccountViewModel
     
     var body: some View {
         VStack {
             VStack(alignment: .leading, spacing: 3) {
                 Text("Select a card type")
-                    .font(.system(size: 18))
-                    .fontWeight(.bold)
-                    .foregroundColor(Color(red: -0.004, green: 0.239, blue: 0.43))
                     .padding(.leading, 10)
                 Divider()
-            }
-            .padding(.top, 15)
-            
+            }.padding(.top, 15)
+
             HStack {
-                ForEach(0 ..< logos.count) { index in
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                ForEach(0..<self.model.selectorLogos.count) { index in
+                    Button(action:{ self.model.selectedCardType = index }) {
                         VStack {
-                            Image(self.logos[index])
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                            Image("checkmark-outline-selector")
+                            Image(self.model.selectorLogos[index])
+                            Spacer()
+                            
+                            Image(self.model.selectedCardType == index ? "checkmark-selector" : "checkmark-outline-selector")
                         }
                     }
                     .buttonStyle(CreditCardStyle())
                 }
-                .padding(.top, 20)
-            }
-            .background(Color.clear)
-        }
+            }.padding(.top, 20)
+        }.background(Color.clear)
     }
 }
 
@@ -46,4 +37,3 @@ struct CreditCardTypeMenuView_Previews: PreviewProvider {
             .previewLayout(.fixed(width: 400, height: 180))
     }
 }
-

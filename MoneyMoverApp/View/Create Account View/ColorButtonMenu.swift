@@ -2,28 +2,22 @@
 import SwiftUI
 
 struct ColorButtonMenu: View {
-    private var selectedSegment: Int = 0
-    private var selectedColor: Color = Color(red: -0.004, green: 0.239, blue: 0.43)
-    private var colors: [Color] = [
-        Color(red: -0.004, green: 0.239, blue: 0.43),
-        .black,
-        .red,
-        .green,
-        .purple,
-        .gray
-    ]
+    @EnvironmentObject var model: CreateAccountViewModel
     
     var body: some View {
-        HStack {
-            ForEach(0 ..< colors.count) { index in
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+        HStack(spacing: 15) {
+            ForEach(0..<self.model.colors.count) { index in
+                Button(action: {
+                    self.model.selectedCardColorType = index
+                    self.model.selectedCardColor = self.model.uiColors[index]
+                }) {
                     ZStack {
-                        ColorView(color: self.colors[index])
+                        ColorView(color: self.model.colors[index])
                         Image("checkmark-selector")
                             .resizable()
                             .renderingMode(.template)
-                            .opacity(self.selectedSegment == index ? 1 : 0)
-                            .frame(width: 12, height: 10)
+                            .opacity(self.model.selectedCardColorType == index ? 1 : 0)
+                            .frame(width: 12.0, height: 10.0)
                             .foregroundColor(.white)
                     }
                 }
@@ -40,4 +34,3 @@ struct ColorButtonMenu_Previews: PreviewProvider {
             .previewLayout(.fixed(width: 300, height: 50))
     }
 }
-
