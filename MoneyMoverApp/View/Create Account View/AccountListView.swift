@@ -5,7 +5,7 @@ struct AccountListView: View {
     
     @FetchRequest(fetchRequest: Account.accountFetchRequest)
     var accounts: FetchedResults<Account>
-    
+
     @State var showCreateAccountScreen = false
     let model = CreateAccountViewModel()
     
@@ -17,23 +17,26 @@ struct AccountListView: View {
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
-                List {
+            ScrollView(.vertical) {
+                VStack(alignment: .center, spacing: 40) {
                     ForEach(accounts) { account in
-                        HStack {
-                            Spacer()
-                            
-                            NavigationLink(destination: AccountHomeView(account: account)) {
-                                CardListRow(account: account)
-                            }.buttonStyle(PlainButtonStyle())
-                            
-                            Spacer()
-                        }
-                        .padding()
+                        NavigationLink(destination: AccountHomeView(account: account)) {
+                            CardListRow(account: account)
+                        }.buttonStyle(PlainButtonStyle())
                     }
                 }
             }
             .navigationBarTitle("Accounts")
+            .sheet(isPresented: $showCreateAccountScreen) {
+                CreateAccountView().environmentObject(self.model)
+            }
+            .navigationBarItems(trailing:
+                Button(action: {
+                    self.showCreateAccountScreen.toggle()
+                }) {
+                    Text("Add New")
+                }
+            )
         }
     }
 }
@@ -45,4 +48,3 @@ struct AccountListView_Previews: PreviewProvider {
             .environment(\.managedObjectContext, MockAccountPreviewService.managedObjectContext)
     }
 }
-
