@@ -2,6 +2,11 @@
 import SwiftUI
 
 struct CardView: View {
+    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
+    @EnvironmentObject var model: CreateAccountViewModel
+    
     var body: some View {
         ZStack {
             HStack(spacing: -116) {
@@ -10,7 +15,7 @@ struct CardView: View {
                     .foregroundColor(.black)
                 Image("right-card")
                     .renderingMode(.template)
-                    .foregroundColor(.black)
+                    .foregroundColor(model.colors[model.selectedCardColorType])
                     .opacity(0.7)
             }
             
@@ -25,7 +30,7 @@ struct CardView: View {
                             .font(.subheadline)
                     }
                     Spacer()
-                    Image("visa-logo")
+                    Image("\(model.cardLogos[model.selectedCardType])")
                 }
                 .padding(.horizontal, 20)
                 HStack {
@@ -70,5 +75,6 @@ struct CardView: View {
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         CardView()
+            .environmentObject(CreateAccountViewModel())
     }
 }
