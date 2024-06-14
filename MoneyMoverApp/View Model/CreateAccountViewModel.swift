@@ -24,7 +24,7 @@ class CreateAccountViewModel: ObservableObject {
     @Published var selectedAccountType = 0
     @Published var selectedCardType = 0
     @Published var selectedCardColorType = 0
-    @Published var selectedCardColor: UIColor = .systemTeal
+    @Published var selectedCardColor: UIColor = .black
     @Published var displayExpDate = ""
     @Published var ccNumber = ""
     @Published var cvv = ""
@@ -51,6 +51,33 @@ class CreateAccountViewModel: ObservableObject {
                                .gray]
     
     func createAccount() {
+        let currentAccount = Account(context: CoreDataManager.shared.context)
+        CoreDataManager.shared.context.perform {
+            let accountNo = UUID().uuidString.suffix(6)
+            let currentCard = Card(context: CoreDataManager.shared.context)
+            currentCard.expirationDate = self.expDate
+            currentCard.number = self.ccNumber
+            currentCard.cvv = self.cvv
+            currentCard.id = String(accountNo)
+            currentCard.dateCreated = Date()
+            currentCard.color = String("\(self.selectedCardColor)")
+            currentCard.logo = self.cardLogos[self.selectedCardType]
+            
+            if self.accountTypes[self.selectedAccountType] == AccountType.creditcard.rawValue {
+                currentAccount.balance = self.creditLimit
+            } else {
+                currentAccount.balance = Float(self.createRandomBalance())
+            }
+            currentAccount.acctNumber = String(accountNo)
+            currentAccount.firstName = self.firstName
+            currentAccount.lastName = self.lastName
+            currentAccount.dateCreated = Date()
+            currentAccount.type = self.accountTypes[self.selectedAccountType]
+            currentAccount.card = currentCard
+            
+            CoreDataManager.shared.save()
+            self.clear()
+        }
     }
     
     func hasAccounts() -> Bool {
