@@ -5,7 +5,7 @@ struct AccountListView: View {
     
     @FetchRequest(fetchRequest: Account.accountFetchRequest)
     var accounts: FetchedResults<Account>
-
+    
     @State var showCreateAccountScreen = false
     let model = CreateAccountViewModel()
     
@@ -17,25 +17,38 @@ struct AccountListView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView(.vertical) {
-                VStack(alignment: .center, spacing: 40) {
-                    ForEach(accounts) { account in
-                        NavigationLink(destination: AccountHomeView(account: account)) {
-                            CardListRow(account: account)
-                        }.buttonStyle(PlainButtonStyle())
+            ZStack {
+                Color(mainBackgroundColor)
+                    .edgesIgnoringSafeArea(.all)
+                
+                ScrollView(.vertical) {
+                    VStack(alignment: .center, spacing: 40) {
+                        ForEach(accounts) { account in
+                            NavigationLink(destination: AccountHomeView(account: account)) {
+                                CardListRow(account: account)
+                            }.buttonStyle(PlainButtonStyle())
+                        }
                     }
                 }
             }
-            .navigationBarTitle("Accounts")
+            .toolbar {
+                ToolbarItem(placement:.principal) {
+                    Text("Accounts")
+                        .font(.system(size: 28))
+                        .foregroundColor(secondaryFontColor)
+                }
+            }
             .sheet(isPresented: $showCreateAccountScreen) {
                 CreateAccountView().environmentObject(self.model)
             }
             .navigationBarItems(trailing:
-                Button(action: {
-                    self.showCreateAccountScreen.toggle()
-                }) {
-                    Text("Add New")
-                }
+                                    Button(action: {
+                self.showCreateAccountScreen.toggle()
+            }) {
+                Text("\(Image(systemName: "plus"))")
+                    .font(.system(size: 24))
+                    .foregroundColor(Color(mainFontColor))
+            }
             )
         }
     }
