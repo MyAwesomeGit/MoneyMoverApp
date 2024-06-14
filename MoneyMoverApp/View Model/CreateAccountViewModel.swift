@@ -15,7 +15,7 @@ enum CardType: String {
     case mastercard
 }
 
-
+// TODO: Apply separate viewModels
 class CreateAccountViewModel: ObservableObject {
     
     @Published var firstName = ""
@@ -32,16 +32,16 @@ class CreateAccountViewModel: ObservableObject {
     
     var creditLimit: Float = 0.0
     var selectorLogos = ["mc-logo-selector", "visa-logo-selector", "mir-logo-selector"]
-    var cardLogos = ["mc-logo-selector", "visa-logo", "mir-logo"]
+    var cardLogos = ["mc-logo-selector", "visa-logo", "mir-logo-selector"]
     var accountTypes: [String] = [AccountType.debit.rawValue, AccountType.creditcard.rawValue]
     var colors: [Color] = [.yellow,
-                           .blue,
+                           .pink,
                            .black,
                            .red,
-                           .pink,
+                           .blue,
                            .purple,
                            .gray]
-    
+//    TODO: Apply protocol to colors
     var uiColors: [UIColor] = [.systemMint,
                                .blue,
                                .black,
