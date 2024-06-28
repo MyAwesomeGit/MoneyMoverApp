@@ -5,24 +5,22 @@ struct AccountFormView: View {
     private var type = "creditcard"
     
     init() {
-        UITableView.appearance().backgroundColor = UIColor.white
+        UITableView.appearance().backgroundColor = UIColor.black
         UITableView.appearance().tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: Double.leastNonzeroMagnitude))
         UITableView.appearance().tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: Double.leastNonzeroMagnitude))
         UITableView.appearance().separatorStyle = .none
     }
     
     var body: some View {
-        List {
-            Section {
+        ZStack {
+            Color(mainBackgroundColor)
+                .edgesIgnoringSafeArea(.all)
+            VStack {
                 FirstNameView()
                 LastNameView()
                 CardLimitView()
             }
-            .listRowBackground(Color.white)
-            .listRowInsets(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
         }
-        .listStyle(GroupedListStyle())
-        .background(Color.white)
     }
 }
 
@@ -30,7 +28,6 @@ struct AccountFormView: View {
 struct AccountFormView_Previews: PreviewProvider {
     static var previews: some View {
         AccountFormView()
-            .previewLayout(.fixed(width: 600, height: 200))
     }
 }
 
