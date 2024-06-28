@@ -9,7 +9,7 @@ struct CreateAccountView: View {
     
     var body: some View {
         ZStack {
-            Color(.white)
+            Color(mainBackgroundColor)
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 header
@@ -34,7 +34,7 @@ private extension CreateAccountView {
             Text("Create an account")
                 .font(.system(size: 32))
                 .fontWeight(.bold)
-                .foregroundColor(Color(red: -0.004, green: 0.239, blue: 0.43))
+                .foregroundColor(mainFontColor)
         }
         .padding(.bottom, 20)
     }
@@ -49,9 +49,8 @@ private extension CreateAccountView {
                     .font(.system(size: 18))
                     .fontWeight(.bold)
                     .frame(width: 294, height: 34)
-                    .foregroundColor(Color(red: -0.004, green: 0.239, blue: 0.43))
+                    .foregroundColor(mainFontColor)
                     .cornerRadius(4)
-                    .foregroundColor(.white)
                 RoundedRectangle(cornerRadius: 6)
                     .stroke(lineWidth: 2)
                     .foregroundColor(Color(red: -0.004, green: 0.239, blue: 0.43))
@@ -68,7 +67,7 @@ private extension CreateAccountView {
                 Text("Select an account type")
                     .font(.system(size: 18))
                     .fontWeight(.bold)
-                    .foregroundColor(Color(red: -0.004, green: 0.239, blue: 0.43))
+                    .foregroundColor(secondaryFontColor)
                     .padding(.leading, 10)
                 Divider()
             }
@@ -86,6 +85,7 @@ private extension CreateAccountView {
         ScrollView {
             VStack {
                 accountSelector
+                Divider()
                 AccountFormView()
                         .frame(height: self.model.selectedAccountType == 1 ? 182 : 120)
                 VStack {
