@@ -10,6 +10,7 @@ struct CreditCardTypeMenuView: View {
             VStack(alignment: .leading, spacing: 3) {
                 Text("Select a card type")
                     .padding(.leading, 10)
+                    .foregroundColor(secondaryFontColor)
                 Divider()
             }.padding(.top, 15)
 
