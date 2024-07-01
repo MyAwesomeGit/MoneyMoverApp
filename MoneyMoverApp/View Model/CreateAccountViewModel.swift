@@ -41,7 +41,7 @@ class CreateAccountViewModel: ObservableObject {
                            .blue,
                            .purple,
                            .gray]
-//    TODO: Apply protocol to colors
+    //    TODO: Apply protocol to colors
     var uiColors: [UIColor] = [.systemMint,
                                .blue,
                                .black,
@@ -80,6 +80,7 @@ class CreateAccountViewModel: ObservableObject {
         }
     }
     
+    
     func hasAccounts() -> Bool {
         let request: NSFetchRequest<Account> = Account.fetchRequest()
         var accounts: [Account] = []
@@ -95,9 +96,11 @@ class CreateAccountViewModel: ObservableObject {
         }
     }
     
+    
     func createRandomBalance() -> Int {
         return Int.random(in: 1000...1000000)
     }
+    
     
     func clear() {
         firstName = ""
@@ -106,6 +109,21 @@ class CreateAccountViewModel: ObservableObject {
         selectedAccountType = 0
         selectedCardType = 0
         selectedCardColorType = 0
+    }
+    
+    
+    func fetchCard(with id: String) -> Card? {
+        var card: Card?
+        
+        CoreDataManager.shared.context.perform {
+            let request: NSFetchRequest<Card> = Card.fetchRequest()
+            request.predicate = NSPredicate(format: "id = %@", id)
+            request.fetchLimit = 1
+            
+            card = try? CoreDataManager.shared.context.fetch(request).first
+        }
+        
+        return card
     }
 }
 
@@ -169,7 +187,7 @@ extension CreateAccountViewModel {
         let randomNumber = Int.random(in: 1000...9999)
         return String(randomNumber)
     }
-
+    
     
     func generateCVV() -> String {
         let cvv = Int.random(in: 100...999)
