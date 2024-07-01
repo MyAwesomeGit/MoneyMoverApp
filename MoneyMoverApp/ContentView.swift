@@ -3,14 +3,24 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var model = CreateAccountViewModel()
+    @State private var isLoading = true
     
     var body: some View {
         ZStack {
-            CreateAccountView().environmentObject(model)
-            
-            if model.hasAccounts() {
-                AccountListView()
-                    .padding()
+            if isLoading {
+                LoadingView()
+            } else {
+                CreateAccountView().environmentObject(model)
+                
+                if model.hasAccounts() {
+                    AccountListView()
+                        .padding()
+                }
+            }
+        }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline:.now() + 3) {
+                self.isLoading = false
             }
         }
     }
