@@ -11,6 +11,8 @@ struct MoneyMoverAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(model)
+                .environment(\.managedObjectContext, manager.context)
         }
     }
 }
