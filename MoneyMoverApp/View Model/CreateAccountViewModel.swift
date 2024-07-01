@@ -125,6 +125,22 @@ class CreateAccountViewModel: ObservableObject {
         
         return card
     }
+    
+    
+    func fetchCards() -> [Card]? {
+        var cards: [Card] = []
+        
+        CoreDataManager.shared.context.perform {
+            let request: NSFetchRequest<Card> = Card.fetchRequest()
+            if let items = try? CoreDataManager.shared.context.fetch(request) {
+                for item in items {
+                    cards.append(item)
+                }
+            }
+        }
+        
+        return cards
+    }
 }
 
 
