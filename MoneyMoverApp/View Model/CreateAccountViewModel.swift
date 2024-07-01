@@ -141,6 +141,19 @@ class CreateAccountViewModel: ObservableObject {
         
         return cards
     }
+    
+    
+    func deleteCard(with id: String) {
+        CoreDataManager.shared.context.perform {
+            let request: NSFetchRequest<Card> = Card.fetchRequest()
+            request.predicate = NSPredicate(format: "id = %@", id)
+            request.fetchLimit = 1
+            
+            if let item = try? CoreDataManager.shared.context.fetch(request).first {
+                CoreDataManager.shared.context.delete(item)
+            }
+        }
+    }
 }
 
 
