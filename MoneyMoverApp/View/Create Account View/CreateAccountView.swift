@@ -12,7 +12,7 @@ struct CreateAccountView: View {
             VStack {
                 accountSelector
                 AccountFormView()
-                    .frame(height: self.model.selectedAccountType == 1 ? 120 : 0)
+                    .frame(height: self.model.selectedAccountType == 1 ? 180 : 0)
                 VStack {
                     CreditCardTypeMenuView()
                     CardView()
