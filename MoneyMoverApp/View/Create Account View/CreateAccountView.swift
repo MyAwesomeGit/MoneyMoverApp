@@ -7,6 +7,27 @@ struct CreateAccountView: View {
     
     @EnvironmentObject var model: CreateAccountViewModel
     
+    var main: some View {
+        ScrollView {
+            VStack {
+                accountSelector
+                AccountFormView()
+                    .frame(height: self.model.selectedAccountType == 1 ? 120 : 0)
+                VStack {
+                    CreditCardTypeMenuView()
+                    CardView()
+                        .padding(.vertical, 20)
+                    ColorButtonMenu()
+                    Spacer()
+                }
+                .padding(.top, 0)
+                
+                createAccountButton
+            }
+        }
+    }
+    
+    
     var body: some View {
         ZStack {
             Color(mainBackgroundColor)
@@ -32,9 +53,9 @@ private extension CreateAccountView {
     var header: some View {
         VStack(spacing: -8) {
             Text("Create an account")
+                .foregroundColor(secondaryFontColor)
                 .font(.system(size: 32))
                 .fontWeight(.bold)
-                .foregroundColor(mainFontColor)
         }
         .padding(.bottom, 20)
     }
@@ -46,14 +67,15 @@ private extension CreateAccountView {
         }) {
             ZStack {
                 Text("Create account")
-                    .font(.system(size: 18))
+                    .font(.system(size: 24))
                     .fontWeight(.bold)
                     .frame(width: 294, height: 34)
                     .foregroundColor(mainFontColor)
                     .cornerRadius(4)
+                    .foregroundColor(.white)
                 RoundedRectangle(cornerRadius: 6)
                     .stroke(lineWidth: 2)
-                    .foregroundColor(Color(red: -0.004, green: 0.239, blue: 0.43))
+                    .foregroundColor(secondaryFontColor)
                     .frame(width: 300, height: 40)
             }
         }
@@ -80,27 +102,6 @@ private extension CreateAccountView {
             .padding(.leading, 10)
         }
     }
-    
-    var main: some View {
-        ScrollView {
-            VStack {
-                accountSelector
-                Divider()
-                AccountFormView()
-                        .frame(height: self.model.selectedAccountType == 1 ? 182 : 120)
-                VStack {
-                    CreditCardTypeMenuView()
-                    CardView()
-                        .padding(.vertical, 20)
-                    ColorButtonMenu()
-                    Spacer()
-                }
-                .padding(.top, 0)
-                
-                createAccountButton
-            }
-        }
-    }
 }
 
 
@@ -110,4 +111,3 @@ struct CreateAccountView_Previews: PreviewProvider {
             .environmentObject(CreateAccountViewModel())
     }
 }
-

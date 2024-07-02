@@ -9,11 +9,11 @@ struct CreditCardTypeMenuView: View {
         VStack {
             VStack(alignment: .leading, spacing: 3) {
                 Text("Select a card type")
-                    .padding(.leading, 10)
                     .foregroundColor(secondaryFontColor)
+                    .padding(.leading, 10)
                 Divider()
             }.padding(.top, 15)
-
+            
             HStack {
                 ForEach(0..<self.model.selectorLogos.count) { index in
                     Button(action:{ self.model.selectedCardType = index }) {
@@ -28,13 +28,5 @@ struct CreditCardTypeMenuView: View {
                 }
             }.padding(.top, 20)
         }.background(Color.clear)
-    }
-}
-
-
-struct CreditCardTypeMenuView_Previews: PreviewProvider {
-    static var previews: some View {
-        CreditCardTypeMenuView()
-            .previewLayout(.fixed(width: 400, height: 180))
     }
 }
