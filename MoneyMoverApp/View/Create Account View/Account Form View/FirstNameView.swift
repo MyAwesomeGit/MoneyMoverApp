@@ -13,12 +13,11 @@ struct FirstNameView: View {
                 HStack(alignment: .center, spacing: 0) {
                     Text("FIRST NAME")
                         .font(.system(size: 18))
-                    .foregroundColor(secondaryFontColor)
-
+                        .foregroundColor(secondaryFontColor)
                     TextField("First Name", text: $firstName)
+                        .foregroundColor(mainFontColor)
                         .multilineTextAlignment(.trailing)
                         .font(.system(size: 18))
-                        .foregroundColor(mainFontColor)
                         .padding(.trailing, 10)
                 }.padding(.horizontal, 0)
             }
@@ -32,5 +31,6 @@ struct FirstNameView: View {
 struct FirstNameView_Previews: PreviewProvider {
     static var previews: some View {
         FirstNameView()
+            .environmentObject(CreateAccountViewModel())
     }
 }
