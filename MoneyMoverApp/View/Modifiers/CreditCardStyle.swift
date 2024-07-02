@@ -8,5 +8,6 @@ struct CreditCardStyle: ButtonStyle {
             .background(Color.white)
             .cornerRadius(10)
             .buttonStyle(PlainButtonStyle())
+            .aspectRatio(contentMode: .fit)
     }
 }
