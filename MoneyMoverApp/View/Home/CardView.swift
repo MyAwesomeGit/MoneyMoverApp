@@ -23,7 +23,7 @@ struct CardView: View {
                 HStack {
                     Image("greencheckmark")
                     VStack(alignment: .leading, spacing:  -6) {
-                        Text("1 000 000 ₽")
+                        Text("\(model.limit)")
                             .font(.title2)
                             .fontWeight(.bold)
                         Text("Available balance")
