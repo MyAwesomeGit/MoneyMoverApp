@@ -66,7 +66,7 @@ class CreateAccountViewModel: ObservableObject {
             if self.accountTypes[self.selectedAccountType] == AccountType.creditcard.rawValue {
                 currentAccount.balance = self.creditLimit
             } else {
-                currentAccount.balance = Float(self.createRandomBalance())
+                currentAccount.balance = Float(self.createRandomBalance()) ?? 0.0
             }
             currentAccount.acctNumber = String(accountNo)
             currentAccount.firstName = self.firstName
@@ -97,8 +97,19 @@ class CreateAccountViewModel: ObservableObject {
     }
     
     
-    func createRandomBalance() -> Int {
-        return Int.random(in: 1000...1000000)
+    func createRandomBalance() -> String {
+        let randomBalance = Double.random(in: 1000000.0...9000000.0)
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = .currency
+        currencyFormatter.locale = Locale.current
+        currencyFormatter.maximumFractionDigits = 2
+        
+        if let formattedBalance = currencyFormatter.string(from: NSNumber(value: randomBalance)) {
+            return formattedBalance
+        } else {
+            return "0.00"
+        }
     }
     
     
@@ -163,6 +174,7 @@ extension CreateAccountViewModel {
         expDate = generateCardExpiration(amount: 2)
         ccNumber = generateCCNumber()
         cvv = generateCVV()
+        limit = String(createRandomBalance())
     }
     
     
