@@ -35,10 +35,7 @@ struct CardView: View {
                 .padding(.horizontal, 20)
                 HStack {
                     HStack {
-                        Text("0000")
-                        Text("1000")
-                        Text("1234")
-                        Text("0708")
+                        Text("\(model.ccNumber)")
                     }
                     .font(.system(size: 12))
                     Spacer()
