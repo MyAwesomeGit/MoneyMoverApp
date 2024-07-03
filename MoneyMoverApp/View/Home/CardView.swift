@@ -47,7 +47,7 @@ struct CardView: View {
                 HStack {
                     VStack(alignment: .leading) {
                         Text("CARD HOLDER")
-                        Text("Jack")
+                        Text("\(model.firstName) \(model.lastName)")
                     }
                     .foregroundColor(Color.white)
                     .font(.system(size: 12))
