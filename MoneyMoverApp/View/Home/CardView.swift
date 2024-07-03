@@ -58,7 +58,7 @@ struct CardView: View {
                     
                     VStack(alignment: .leading) {
                         Text("EXPIRES")
-                        Text("01/28")
+                        Text("\(model.displayExpDate)")
                     }
                     .foregroundColor(Color.white)
                     .font(.system(size: 10))
